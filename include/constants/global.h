@@ -195,11 +195,27 @@ enum Gender
 #define OPTIONS_TEXT_SPEED_FAST 2
 #define OPTIONS_TEXT_SPEED_INSTANT 3
 
+#define OPTIONS_OVERWORLD_SPEED_1X                          0
+#define OPTIONS_OVERWORLD_SPEED_2X                          1
+#define OPTIONS_OVERWORLD_SPEED_4X                          2
+#define OPTIONS_OVERWORLD_SPEED_8X                          3
+
+#define OPTIONS_OVERWORLD_SPEED_1X_EXTRA_ITERATIONS         0
+#define OPTIONS_OVERWORLD_SPEED_2X_EXTRA_ITERATIONS         1
+#define OPTIONS_OVERWORLD_SPEED_4X_EXTRA_ITERATIONS         3
+#define OPTIONS_OVERWORLD_SPEED_8X_EXTRA_ITERATIONS         7
+
 #define OPTIONS_SOUND_MONO 0
 #define OPTIONS_SOUND_STEREO 1
 
 #define OPTIONS_BATTLE_STYLE_SHIFT 0
 #define OPTIONS_BATTLE_STYLE_SET 1
+
+#define OPTIONS_BATTLE_SPEED_1X         0
+#define OPTIONS_BATTLE_SPEED_2X         1
+#define OPTIONS_BATTLE_SPEED_3X         2
+#define OPTIONS_BATTLE_SPEED_4X         3
+#define OPTIONS_BATTLE_SPEED_COUNT      4
 
 enum __attribute__((packed)) Direction
 {

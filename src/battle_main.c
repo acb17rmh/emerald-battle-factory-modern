@@ -112,6 +112,7 @@ static void DoBattleIntro(void);
 static void TryDoEventsBeforeFirstTurn(void);
 static void HandleTurnActionSelectionState(void);
 static void RunTurnActionsFunctions(void);
+static u32 BattleSpeed_GetScale(void);
 static void SetActionsAndBattlersTurnOrder(void);
 static void UpdateBattlerPartyOrdersOnSwitch(enum BattlerId battler);
 static bool8 AllAtActionConfirmed(void);
@@ -1747,6 +1748,22 @@ static void CB2_HandleStartMultiBattle(void)
 
 void BattleMainCB2(void)
 {
+    u32 speedScale = BattleSpeed_GetScale();
+
+    if (GetPreviousPaletteFadeResult() == PALETTE_FADE_STATUS_LOADING)
+        speedScale = 1;
+
+    for (u32 i = 1; i < speedScale; i++)
+    {
+        AnimateSprites();
+        RunTextPrinters();
+        UpdatePaletteFade();
+        RunTasks();
+        VBlankCB_Battle();
+        if (gMain.callback1 != NULL)
+            gMain.callback1();
+    }
+
     AnimateSprites();
     BuildOamBuffer();
     RunTextPrinters();
@@ -1760,6 +1777,27 @@ void BattleMainCB2(void)
         ResetPaletteFadeControl();
         BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 16, RGB_BLACK);
         SetMainCallback2(CB2_QuitRecordedBattle);
+    }
+}
+
+static u32 BattleSpeed_GetScale(void)
+{
+    u8 battleSpeed = VarGet(VAR_BATTLE_SPEED);
+
+    if (JOY_HELD(L_BUTTON) || InBattleChoosingMoves())
+        return 1;
+
+    switch (battleSpeed)
+    {
+    case OPTIONS_BATTLE_SPEED_2X:
+        return 2;
+    case OPTIONS_BATTLE_SPEED_3X:
+        return 3;
+    case OPTIONS_BATTLE_SPEED_4X:
+        return 4;
+    case OPTIONS_BATTLE_SPEED_1X:
+    default:
+        return 1;
     }
 }
 
@@ -2968,6 +3006,11 @@ void BeginBattleIntro(void)
     gBattleCommunication[1] = 0;
     gBattleStruct->eventState.battleIntro = 0;
     gBattleMainFunc = DoBattleIntro;
+}
+
+bool32 InBattleChoosingMoves(void)
+{
+    return gBattleMainFunc == HandleTurnActionSelectionState;
 }
 
 static void BattleMainCB1(void)

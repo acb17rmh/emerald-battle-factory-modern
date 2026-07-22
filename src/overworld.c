@@ -82,7 +82,24 @@
 #include "constants/rgb.h"
 #include "constants/songs.h"
 #include "constants/trainer_hill.h"
+#include "constants/vars.h"
 #include "constants/weather.h"
+
+u8 OverworldSpeedup_AdditionalIterations(u16 speed)
+{
+    switch (speed)
+    {
+    case OPTIONS_OVERWORLD_SPEED_8X:
+        return OPTIONS_OVERWORLD_SPEED_8X_EXTRA_ITERATIONS;
+    case OPTIONS_OVERWORLD_SPEED_4X:
+        return OPTIONS_OVERWORLD_SPEED_4X_EXTRA_ITERATIONS;
+    case OPTIONS_OVERWORLD_SPEED_2X:
+        return OPTIONS_OVERWORLD_SPEED_2X_EXTRA_ITERATIONS;
+    case OPTIONS_OVERWORLD_SPEED_1X:
+    default:
+        return OPTIONS_OVERWORLD_SPEED_1X_EXTRA_ITERATIONS;
+    }
+}
 
 STATIC_ASSERT((B_FLAG_FOLLOWERS_DISABLED == 0 || OW_FOLLOWERS_ENABLED), FollowersFlagAssignedWithoutEnablingThem);
 
@@ -1876,9 +1893,16 @@ void CB2_OverworldBasic(void)
 void CB2_Overworld(void)
 {
     bool32 fading = (gPaletteFade.active != 0);
+    u8 loops;
     if (fading)
         SetVBlankCallback(NULL);
     OverworldBasic();
+    for (loops = 0; loops < OverworldSpeedup_AdditionalIterations(VarGet(VAR_OVERWORLD_SPEEDUP)); loops++)
+    {
+        AnimateSprites();
+        CameraUpdate();
+        UpdateCameraPanning();
+    }
     if (fading)
     {
         SetFieldVBlankCallback();

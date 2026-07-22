@@ -499,6 +499,7 @@ void OakOldManHandleInputChooseMove(enum BattlerId battler);
 void BtlCtrl_DrawVoiceoverMessageFrame(void);
 void BtlCtrl_RemoveVoiceoverMessageFrame(void);
 
+
 bool32 ShouldBattleRestrictionsApply(enum BattlerId battler);
 void FreeShinyStars(void);
 enum BattleTrainer GetBattlerTrainer(enum BattlerId battler);
