@@ -211,6 +211,16 @@ extern const u8 gText_Birch_SoItsPlayer[];
 extern const u8 gText_Birch_YourePlayer[];
 extern const u8 gText_Birch_AreYouReady[];
 
+extern const u8 gText_Noland_Welcome[];
+extern const u8 gText_Noland_ExplainFactory[];
+extern const u8 gText_Noland_MainSpeech[];
+extern const u8 gText_Noland_AndYouAre[];
+extern const u8 gText_Noland_BoyOrGirl[];
+extern const u8 gText_Noland_WhatsYourName[];
+extern const u8 gText_Noland_SoItsPlayer[];
+extern const u8 gText_Noland_YourePlayer[];
+extern const u8 gText_Noland_AreYouReady[];
+
 extern const u8 gText_BirchInTrouble[];
 extern const u8 gText_ConfirmStarterChoice[];
 
