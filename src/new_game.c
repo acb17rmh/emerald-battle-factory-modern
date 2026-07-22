@@ -56,10 +56,11 @@ extern const u8 EventScript_ResetAllMapFlags[];
 extern const u8 EventScript_ResetAllMapFlagsFrlg[];
 
 static void ClearFrontierRecord(void);
-static void WarpToTruck(void);
+static void WarpToBattleFactory(void);
 static void ResetMiniGamesRecords(void);
 static void ResetItemFlags(void);
 static void ResetDexNav(void);
+static void SetFactoryStartupFlags(void);
 
 EWRAM_DATA bool8 gDifferentSaveFile = FALSE;
 EWRAM_DATA bool8 gEnableContestDebugging = FALSE;
@@ -133,12 +134,12 @@ static void ClearFrontierRecord(void)
     gSaveBlock2Ptr->frontier.opponentNames[1][0] = EOS;
 }
 
-static void WarpToTruck(void)
+static void WarpToBattleFactory(void)
 {
     if (IS_FRLG)
         SetWarpDestination(MAP_GROUP(MAP_PALLET_TOWN_PLAYERS_HOUSE_2F), MAP_NUM(MAP_PALLET_TOWN_PLAYERS_HOUSE_2F), WARP_ID_NONE, 6, 6);
     else
-        SetWarpDestination(MAP_GROUP(MAP_INSIDE_OF_TRUCK), MAP_NUM(MAP_INSIDE_OF_TRUCK), WARP_ID_NONE, -1, -1);
+        SetWarpDestination(MAP_GROUP(MAP_BATTLE_FRONTIER_OUTSIDE_WEST), MAP_NUM(MAP_BATTLE_FRONTIER_OUTSIDE_WEST), WARP_ID_NONE, 11, 39);
     WarpIntoMap();
 }
 
@@ -211,7 +212,7 @@ void NewGameInitData(void)
     ResetFanClub();
     ResetLotteryCorner();
     UpdateDailySeed();
-    WarpToTruck();
+    WarpToBattleFactory();
     if (IS_FRLG)
         RunScriptImmediately(EventScript_ResetAllMapFlagsFrlg);
     else
@@ -234,6 +235,7 @@ void NewGameInitData(void)
     ResetItemFlags();
     ResetDexNav();
     ClearFollowerNPCData();
+    SetFactoryStartupFlags();
 }
 
 static void ResetMiniGamesRecords(void)
@@ -257,4 +259,14 @@ static void ResetDexNav(void)
     memset(gSaveBlock3Ptr->dexNavSearchLevels, 0, sizeof(gSaveBlock3Ptr->dexNavSearchLevels));
 #endif
     gSaveBlock3Ptr->dexNavChain = 0;
+}
+
+static void SetFactoryStartupFlags(void)
+{
+    // QoL needed to navigate directly to the Factory entrance.
+    FlagSet(FLAG_RECEIVED_RUNNING_SHOES);
+    FlagSet(FLAG_SYS_B_DASH);
+
+    // The Frontier Pass is the player's Trainer Card display while in the Frontier.
+    FlagSet(FLAG_SYS_FRONTIER_PASS);
 }
