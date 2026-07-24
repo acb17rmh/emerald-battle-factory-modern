@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emerald Battle Factory Modern Patcher</title>
+  <meta name="description" content="Patch a legally obtained Pokémon Emerald ROM with Emerald Battle Factory Modern.">
+
+  <link rel="stylesheet" href="./rom-patcher-js/style.css">
+  <script src="./rom-patcher-js/RomPatcher.webapp.js"></script>
+  <script>
+    window.addEventListener('load', function () {
+      try {
+        RomPatcherWeb.initialize({
+          language: 'en',
+          requireValidation: true,
+          allowDropFiles: true
+        }, {
+          file: 'https://github.com/acb17rmh/emerald-battle-factory-modern/releases/latest/download/emerald-battle-factory-modern.bps',
+          name: 'Emerald Battle Factory Modern v0.1.0',
+          inputCrc32: 0x1F1C08FB,
+          description: 'Modern Battle Factory for Pokémon Emerald. Your ROM is processed locally in your browser.',
+          outputName: 'Emerald Battle Factory Modern v0.1.0'
+        });
+      } catch (err) {
+        var message = err.message;
+        if (/incompatible browser/i.test(message) || /variable RomPatcherWeb/i.test(message)) {
+          message = 'Your browser is outdated and is not compatible with this patcher.';
+        }
+        document.getElementById('rom-patcher-container').innerHTML = message;
+        document.getElementById('rom-patcher-container').style.color = 'red';
+      }
+    });
+  </script>
+</head>
+<body style="font: 15px 'Open Sans', sans-serif; background-color: #31343a; color: #e4e4e6;">
+  <header style="text-align: center">
+    <h1>Emerald Battle Factory Modern</h1>
+    <p>Patch your legally obtained Pokémon Emerald ROM in your browser.</p>
+  </header>
+
+  <div id="rom-patcher-container">
+    <div class="rom-patcher-row margin-bottom" id="rom-patcher-row-file-rom">
+      <div class="text-right"><label for="rom-patcher-input-file-rom">ROM file:</label></div>
+      <div class="rom-patcher-container-input">
+        <input type="file" id="rom-patcher-input-file-rom" class="empty" disabled>
+      </div>
+    </div>
+
+    <div class="margin-bottom text-selectable text-mono text-muted" id="rom-patcher-rom-info">
+      <div class="rom-patcher-row">
+        <div class="text-right">CRC32:</div>
+        <div class="text-truncate"><span id="rom-patcher-span-crc32"></span></div>
+      </div>
+      <div class="rom-patcher-row">
+        <div class="text-right">SHA-1:</div>
+        <div class="text-truncate"><span id="rom-patcher-span-sha1"></span></div>
+      </div>
+      <div class="rom-patcher-row" id="rom-patcher-row-info-rom">
+        <div class="text-right">ROM:</div>
+        <div class="text-truncate"><span id="rom-patcher-span-rom-info"></span></div>
+      </div>
+    </div>
+
+    <div class="rom-patcher-row margin-bottom" id="rom-patcher-row-file-patch">
+      <div class="text-right">Patch:</div>
+      <div class="rom-patcher-container-input">
+        <select id="rom-patcher-select-patch"></select>
+      </div>
+    </div>
+    <div class="rom-patcher-row margin-bottom" id="rom-patcher-row-patch-description">
+      <div class="text-right text-mono text-muted">Description:</div>
+      <div class="text-truncate" id="rom-patcher-patch-description"></div>
+    </div>
+    <div class="rom-patcher-row margin-bottom text-selectable text-mono text-muted" id="rom-patcher-row-patch-requirements">
+      <div class="text-right text-mono" id="rom-patcher-patch-requirements-type">ROM requirements:</div>
+      <div class="text-truncate" id="rom-patcher-patch-requirements-value"></div>
+    </div>
+
+    <div class="text-center" id="rom-patcher-row-apply">
+      <div id="rom-patcher-row-error-message" class="margin-bottom">
+        <span id="rom-patcher-error-message"></span>
+      </div>
+      <button id="rom-patcher-button-apply" disabled>Apply patch</button>
+    </div>
+  </div>
+
+  <p style="max-width: 42rem; margin: 2rem auto; text-align: center;">
+    The original ROM is never uploaded. Patching happens locally in your browser.
+    You must provide your own compatible Pokémon Emerald ROM.
+  </p>
+
+  <div id="rom-patcher-powered" class="text-center">
+    <a href="https://github.com/marcrobledo/RomPatcher.js" target="_blank" rel="noopener">
+      <img src="./rom-patcher-js/assets/powered_by_rom_patcher_js.png" loading="lazy" alt="Powered by Rom Patcher JS">
+      Powered by Rom Patcher JS
+    </a>
+  </div>
+</body>
+</html>

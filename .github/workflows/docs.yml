@@ -27,6 +27,10 @@ jobs:
           python3 tools/generate_factory_docs.py --check
           cd docs
           mdbook build
+      - name: Copy ROM patcher
+        run: |
+          mkdir -p docs/book/patcher
+          cp -r docs/patcher/. docs/book/patcher/
       - name: Check if Pages is enabled
         uses: octokit/request-action@v2.x
         id: check_pages
