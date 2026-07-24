@@ -22,6 +22,8 @@
 - [Contributing](./CONTRIBUTING.md)
 - [Styleguide and Principles](./STYLEGUIDE.md)
 - [Credits](./CREDITS.md)
+- [Battle Factory Mechanics](./battle_factory_mechanics.md)
+- [Battle Factory Set Review](./battle_factory_set_review.md)
 - [Tutorials]()
   - [What are AI Flags?](tutorials/ai_flags.md)
     - [How to add new AI Flags](tutorials/ai_logic.md)
