@@ -15578,7 +15578,7 @@
     "id": 1505,
     "constant": "FRONTIER_MON_GENERATED_ALOMOMOLA_1",
     "species": "SPECIES_ALOMOMOLA",
-    "ability": "ABILITY_HEALER",
+    "ability": "ABILITY_REGENERATOR",
     "item": "ITEM_ASSAULT_VEST",
     "nature": "NATURE_SASSY",
     "moves": [
@@ -15603,7 +15603,7 @@
     "id": 1506,
     "constant": "FRONTIER_MON_GENERATED_ALOMOMOLA_2",
     "species": "SPECIES_ALOMOMOLA",
-    "ability": "ABILITY_HEALER",
+    "ability": "ABILITY_REGENERATOR",
     "item": "ITEM_HEAVY_DUTY_BOOTS",
     "nature": "NATURE_RELAXED",
     "moves": [
@@ -18928,7 +18928,7 @@
     "id": 1639,
     "constant": "FRONTIER_MON_GENERATED_ALOMOMOLA_3",
     "species": "SPECIES_ALOMOMOLA",
-    "ability": "ABILITY_HEALER",
+    "ability": "ABILITY_REGENERATOR",
     "item": "ITEM_ROCKY_HELMET",
     "nature": "NATURE_RELAXED",
     "moves": [
@@ -18953,7 +18953,7 @@
     "id": 1640,
     "constant": "FRONTIER_MON_GENERATED_ALOMOMOLA_4",
     "species": "SPECIES_ALOMOMOLA",
-    "ability": "ABILITY_HEALER",
+    "ability": "ABILITY_REGENERATOR",
     "item": "ITEM_HEAVY_DUTY_BOOTS",
     "nature": "NATURE_BOLD",
     "moves": [
@@ -22998,5 +22998,105 @@
     "score": 7,
     "source": "ubers",
     "name": "Mixed Dragon Dance"
+  },
+  {
+    "id": 1802,
+    "constant": "FRONTIER_MON_GENERATED_ARCEUS_NORMAL_1",
+    "species": "SPECIES_ARCEUS_NORMAL",
+    "ability": "ABILITY_MULTITYPE",
+    "item": "ITEM_LEFTOVERS",
+    "nature": "NATURE_ADAMANT",
+    "moves": [
+      "MOVE_BULK_UP",
+      "MOVE_EXTREME_SPEED",
+      "MOVE_SHADOW_CLAW",
+      "MOVE_TAUNT"
+    ],
+    "evs": [
+      248,
+      204,
+      0,
+      0,
+      0,
+      56
+    ],
+    "score": 7,
+    "source": "ubers",
+    "name": "Bulk Up"
+  },
+  {
+    "id": 1803,
+    "constant": "FRONTIER_MON_GENERATED_ARCEUS_NORMAL_2",
+    "species": "SPECIES_ARCEUS_NORMAL",
+    "ability": "ABILITY_MULTITYPE",
+    "item": "ITEM_LIFE_ORB",
+    "nature": "NATURE_ADAMANT",
+    "moves": [
+      "MOVE_SWORDS_DANCE",
+      "MOVE_EXTREME_SPEED",
+      "MOVE_SHADOW_CLAW",
+      "MOVE_DOUBLE_EDGE"
+    ],
+    "evs": [
+      0,
+      252,
+      4,
+      0,
+      0,
+      252
+    ],
+    "score": 7,
+    "source": "ubers",
+    "name": "Double-Edge"
+  },
+  {
+    "id": 1804,
+    "constant": "FRONTIER_MON_GENERATED_ARCEUS_NORMAL_3",
+    "species": "SPECIES_ARCEUS_NORMAL",
+    "ability": "ABILITY_MULTITYPE",
+    "item": "ITEM_HEAVY_DUTY_BOOTS",
+    "nature": "NATURE_IMPISH",
+    "moves": [
+      "MOVE_IRON_DEFENSE",
+      "MOVE_FOUL_PLAY",
+      "MOVE_WILL_O_WISP",
+      "MOVE_RECOVER"
+    ],
+    "evs": [
+      252,
+      0,
+      252,
+      0,
+      4,
+      0
+    ],
+    "score": 7,
+    "source": "ubers",
+    "name": "Stall"
+  },
+  {
+    "id": 1805,
+    "constant": "FRONTIER_MON_GENERATED_ARCEUS_NORMAL_4",
+    "species": "SPECIES_ARCEUS_NORMAL",
+    "ability": "ABILITY_MULTITYPE",
+    "item": "ITEM_HEAVY_DUTY_BOOTS",
+    "nature": "NATURE_ADAMANT",
+    "moves": [
+      "MOVE_SWORDS_DANCE",
+      "MOVE_EXTREME_SPEED",
+      "MOVE_SHADOW_CLAW",
+      "MOVE_TAUNT"
+    ],
+    "evs": [
+      200,
+      252,
+      0,
+      0,
+      0,
+      56
+    ],
+    "score": 7,
+    "source": "ubers",
+    "name": "Swords Dance Extreme Killer"
   }
 ]

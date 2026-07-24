@@ -11,6 +11,15 @@ MON_DATA = ROOT / "src/data/battle_frontier/battle_frontier_mons.h"
 MON_CONSTANTS = CONSTANTS / "battle_frontier_mons.h"
 MANIFEST = ROOT / "src/data/battle_frontier/generated_factory_sets.json"
 GENERATED_START = 882
+SPECIES_NAME_OVERRIDES = {
+    "arceus": "SPECIES_ARCEUS_NORMAL",
+}
+SPECIES_FAMILY_CAPS = {
+    "arceus": 4,
+}
+FINAL_POOL_SPECIES = {
+    "SPECIES_ARCEUS_NORMAL",
+}
 
 BAD_FORMAT_PARTS = (
     "vgc", "doubles", "littlecup", "lc", "monotype", "1v1", "draft",
@@ -32,6 +41,7 @@ ANCHORS = {
     "Great Tusk", "Iron Valiant", "Kingambit", "Tinkaton", "Roaring Moon",
 }
 ABILITY_OVERRIDES = {
+    "SPECIES_ALOMOMOLA": "ABILITY_REGENERATOR",
     "SPECIES_STARMIE": "ABILITY_NATURAL_CURE",
     "SPECIES_SCIZOR": "ABILITY_TECHNICIAN",
     "SPECIES_BRELOOM": "ABILITY_TECHNICIAN",
@@ -128,11 +138,20 @@ def normalise(name):
     return re.sub(r"[^A-Za-z0-9]", "", name).lower()
 
 
+def family_name(species_name):
+    if normalise(species_name).startswith("arceus"):
+        return "arceus"
+    return species_name
+
+
 def build_species_map():
     names = read_names(CONSTANTS / "species.h", "SPECIES_")
     result = {}
     for name in names:
         result.setdefault(normalise(name.removeprefix("SPECIES_")), name)
+    for source_name, species in SPECIES_NAME_OVERRIDES.items():
+        if species in names:
+            result[source_name] = species
     return result
 
 
@@ -219,7 +238,10 @@ def candidates_for(species_name, species_map, move_names, item_names, nature_nam
     species = species_map.get(normalise(species_name))
     if species is None:
         return []
-    ability = ABILITY_OVERRIDES.get(species, abilities.get(species))
+    if species.startswith("SPECIES_ARCEUS_"):
+        ability = "ABILITY_MULTITYPE"
+    else:
+        ability = ABILITY_OVERRIDES.get(species, abilities.get(species))
     if ability is None:
         return []
     candidates = []
@@ -290,10 +312,22 @@ def main():
     selected_species = [name for name in all_candidates if name in ANCHORS]
     selected_species += [name for name in all_candidates if name not in ANCHORS]
     selected = []
+    family_counts = {}
     for species_name in selected_species:
         candidates = all_candidates[species_name]
-        selected.extend(candidates[:4])
-    selected = sorted(selected, key=lambda candidate: (candidate["score"], candidate["species"], candidate["name"]))
+        family = family_name(species_name)
+        limit = SPECIES_FAMILY_CAPS.get(family, 4)
+        remaining = limit - family_counts.get(family, 0)
+        if remaining <= 0:
+            continue
+        selected.extend(candidates[:remaining])
+        family_counts[family] = family_counts.get(family, 0) + min(len(candidates), remaining)
+    selected = sorted(selected, key=lambda candidate: (
+        candidate["score"],
+        candidate["species"] in FINAL_POOL_SPECIES,
+        candidate["species"],
+        candidate["name"],
+    ))
     pool_size = (len(selected) + 7) // 8
     species_occurrences = {}
     constant_names = []

@@ -1,5 +1,11 @@
 # Emerald Battle Factory Modern
 
+<div class="gif-row">
+  <img src="docs/assets/intro-speech.gif" alt="Noland intro speech" width="240">
+  <img src="docs/assets/new-options.gif" alt="Extended options menu" width="240">
+  <img src="docs/assets/example-battle.gif" alt="Example battle" width="240">
+</div>
+
 Emerald Battle Factory Modern modernises (very original name!) the Battle Factory to leverage [pokeemerald-expansion](https://github.com/rh-hideout/pokeemerald-expansion), 
 using its modern battle engine and support for Pokémon from Generations 1–9.
 

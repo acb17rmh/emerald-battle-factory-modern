@@ -37,20 +37,22 @@ For the complete current roster, see the [Generated Set Catalogue](./battle_fact
 
 ## How sets enter the Factory
 
-The roster is split into eight pools. Each pool contains 115 sets.
+The roster is split into eight roughly even pools. The exact number of sets in each pool can change as the roster grows.
 
-| Pool | Level 50 challenge | Open Level challenge |
+In this table, a challenge means a block of seven battles. Challenge 1 is the first seven battles, Challenge 2 is the next seven, and so on.
+
+| Pool | Level 50 first appears | Open Level first appears |
 |---:|---:|---:|
-| 0 | 0 | — |
-| 1 | 1 | — |
-| 2 | 2 | 0 |
-| 3 | 3 | 1 |
-| 4 | 4 | 2 |
-| 5 | 5 | 3 |
-| 6 | 6 | 4 |
-| 7 | 7 and later | 5 and later |
+| 1 | Challenge 1 | Does not appear |
+| 2 | Challenge 2 | Does not appear |
+| 3 | Challenge 3 | Challenge 1 |
+| 4 | Challenge 4 | Challenge 2 |
+| 5 | Challenge 5 | Challenge 3 |
+| 6 | Challenge 6 | Challenge 4 |
+| 7 | Challenge 7 | Challenge 5 |
+| 8 | Challenge 8 and later | Challenge 6 and later |
 
-After the final challenge, the Factory continues using Pool 7. The [set catalogue](./battle_factory_sets.md) has a page for each pool.
+After the final challenge, the Factory continues using Pool 8. The [set catalogue](./battle_factory_sets.md) has a page for each pool.
 
 ## Improving the opening draft
 
@@ -99,15 +101,15 @@ The trainer and the team are selected separately. A trainer's appearance tells y
 
 Factory IVs improve by challenge. The current fixed IV values are:
 
-| Challenge index | Normal battle IVs | Final battle IVs |
+| Challenge | Normal battle IVs | Final battle IVs |
 |---:|---:|---:|
-| 0 | 3 | 6 |
-| 1 | 6 | 9 |
-| 2 | 9 | 12 |
-| 3 | 12 | 15 |
-| 4 | 15 | 18 |
-| 5 | 21 | 31 |
-| 6 and later | 31 | 31 |
+| 1 | 3 | 6 |
+| 2 | 6 | 9 |
+| 3 | 9 | 12 |
+| 4 | 12 | 15 |
+| 5 | 15 | 18 |
+| 6 | 21 | 31 |
+| 7 and later | 31 | 31 |
 
 These are fixed IV values applied to each stat, not a total IV score.
 
@@ -117,7 +119,7 @@ The player selection screen also previews rentals using the appropriate IV value
 
 Factory AI is tied to the challenge number:
 
-- Challenges 0–1: no additional Factory AI checks.
-- Challenges 2–3: checks for obviously bad moves.
-- Challenge 4 onward: checks for bad moves, tries to faint the player's Pokémon, and checks move viability.
-- The Factory Brain uses the strongest listed AI checks.
+- Challenges 1–2: avoids obviously bad moves.
+- Challenges 3–4: uses basic trainer logic, including trying to faint the player's Pokémon and checking move viability.
+- Challenge 5 onward: uses the stronger modern trainer AI.
+- The Factory Brain also uses the stronger modern trainer AI.
