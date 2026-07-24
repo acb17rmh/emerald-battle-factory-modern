@@ -2,7 +2,7 @@
 
 This document describes the Battle Factory rules currently implemented by the expansion. It is the reference point for adding modern Pokémon sets without changing the original Factory progression.
 
-During initial set development, the code routes all progression rows to generated entries at the end of the Factory table. The pool and challenge rules remain in place while the generated roster is reviewed.
+The current Factory routes all progression rows to the generated entries at the end of the Factory table. The original vanilla entries remain available to other Frontier systems, but Factory selection uses the generated roster.
 
 The main implementation is in `src/battle_factory.c`. The set data is in `src/data/battle_frontier/battle_frontier_mons.h`.
 
@@ -37,40 +37,28 @@ Each entry in `gBattleFrontierMons` is one complete Pokémon set. It contains:
 - Nature
 - Poké Ball
 
-The Pokémon's level, IVs, personality, ability, and trainer information are added when the game creates the actual Pokémon.
+The Pokémon's level, IVs, personality, and trainer information are added when the game creates the actual Pokémon. Generated entries also specify an explicit ability.
 
-Adding a new set normally means adding one entry to this table and one matching ID in `include/constants/battle_frontier_mons.h`.
+New generated sets should be added through `tools/generate_factory_sets.py`, which also updates the manifest and progression pool constants.
 
 ## Set ordering and quality ranges
 
-The set table is ordered deliberately. The Factory does not choose from the whole table every time.
+The generated roster contains 920 entries in eight equal pools of 115 entries. The current numeric ranges are:
 
-For Level 50 mode, the initial rental ranges are:
+| Pool | Entry IDs | Level 50 challenge | Open Level challenge |
+|---:|---:|---:|---:|
+| 0 | 882–996 | 0 | — |
+| 1 | 997–1111 | 1 | — |
+| 2 | 1112–1226 | 2 | 0 |
+| 3 | 1227–1341 | 3 | 1 |
+| 4 | 1342–1456 | 4 | 2 |
+| 5 | 1457–1571 | 5 | 3 |
+| 6 | 1572–1686 | 6 | 4 |
+| 7 | 1687–1801 | 7 and later | 5 and later |
 
-| Challenge number | Normal range | Better range used by some rentals |
-|---:|---:|---:|
-| 0 | 110–199 | 162–266 |
-| 1 | 162–266 | 267–371 |
-| 2 | 267–371 | 372–467 |
-| 3 | 372–467 | 468–563 |
-| 4 | 468–563 | 564–659 |
-| 5 | 564–659 | 660–755 |
-| 6 | 660–755 | 372–849 |
-| 7 and later | 372–849 | 372–849 |
+The better-rental logic uses the next progression row where one exists. After the final row, it keeps using Pool 7. The symbolic pool constants in `include/constants/battle_frontier_mons.h` are authoritative; the numeric IDs above are generated from the current roster.
 
-Open Level mode starts at a later point in the table and uses the stronger ranges. Its ranges are:
-
-| Challenge number | Normal range | Better range used by some rentals |
-|---:|---:|---:|
-| 0 | 372–467 | 468–563 |
-| 1 | 468–563 | 564–659 |
-| 2 | 564–659 | 660–755 |
-| 3 | 660–755 | 372–881 |
-| 4 and later | 372–881 | 372–881 |
-
-After the final challenge range is reached, the Factory keeps using it rather than trying to access a range beyond the end of the table.
-
-This ordering is part of the progression system. If we add Gen 9 sets, we need to decide which quality range each set belongs to. Adding sets in the wrong place can change the difficulty of existing challenges.
+The source format score is used to order generated sets from weaker to stronger before they are split into pools. Pool placement is therefore generated, not hand-entered for every set.
 
 ## Initial rental quality
 
@@ -102,7 +90,7 @@ The opponent generation applies similar restrictions:
 - No duplicate species on the opponent team.
 - No duplicate held items, except that `ITEM_NONE` can repeat.
 - No opponent species that matches any of the player's available rental species.
-- High-tier Pokémon are excluded from Level 50 mode.
+- The current generated pools do not place entries above `FRONTIER_MONS_HIGH_TIER`, so all generated sets can appear in Level 50 mode. Open Level still starts at Pool 2 and advances through the stronger pools.
 
 These restrictions are implemented in `GenerateInitialRentalMons` and `GenerateOpponentMons`.
 
@@ -158,14 +146,16 @@ New Pokémon sets should fit the existing system rather than bypass it. Each set
 
 The set itself should not decide when it becomes available. The Factory's ranges and challenge rules should continue to decide that.
 
-## Planned Gen 9 work
+## Generated roster workflow
 
-Before adding Gen 9 data, we need to define:
+The current roster is generated from Smogon singles data. The generator filters unsupported formats and gimmicks, keeps up to four distinct sets per species, infers abilities from set clues and expansion data, and writes the generated C data, constants, and manifest.
 
-1. Which Pokémon and forms are allowed.
-2. Which battle mechanics are intentionally unsupported.
-3. How Gen 9 sets map to the existing quality ranges.
-4. Whether modern sets should be added into the existing table or placed in a separate table with the same selection rules.
-5. How Level 50 and Open Level should differ for the new sets.
+Run the following checks after regenerating the roster:
 
-The safest first implementation is to add a small number of Gen 9 sets to the existing table, place them explicitly in the intended quality ranges, and verify that the original selection, duplicate, swap, IV, and AI systems continue to work unchanged.
+```text
+python3 tools/generate_factory_sets.py
+python3 tools/validate_factory_sets.py
+make -j$(nproc)
+```
+
+The validator checks the manifest, IDs, pool distribution, duplicate sets, EV totals, constants, selected abilities, and unsupported gimmicks.

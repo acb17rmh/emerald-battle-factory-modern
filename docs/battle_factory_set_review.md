@@ -2,7 +2,8 @@
 
 This document is the worksheet for building the new Battle Factory roster.
 
-The final roster will contain a curated selection from Generations 1–9. It will use the existing Factory table and progression rules, but the set IDs and set data will be redesigned.
+The current roster contains a generated selection from Generations 1–9. It uses the existing Factory table and progression rules, with generated set IDs and data at the end of the table.
+
 
 ## Review rules
 
@@ -77,7 +78,7 @@ Setup and Weather take priority over an attacking role when they are the main id
 
 ## Factory pools
 
-The final roster will use the existing Factory progression pools rather than introducing a new tier system.
+The current roster uses the existing Factory progression pools rather than introducing a new tier system.
 
 - Pool 0 is the earliest Level 50 pool.
 - Pools 1 through 6 are the progressively stronger pools.
@@ -123,73 +124,6 @@ Each reviewed set should record:
 8. Choose a provisional Factory pool using the source format as a rough strength signal.
 9. Make only obvious manual pool adjustments.
 10. Mark the set as accepted, rejected, or needing review.
-
-## First audit
-
-The first audit should create a small cross-generation sample containing:
-
-- At least one Pokémon from every generation.
-- Several primary roles.
-- At least one candidate for every Factory pool where practical.
-- A mixture of ordinary, Legendary, Mythical, and alternate-form candidates where suitable.
-
-This sample is for testing the review rules. It is not yet the final roster.
-
-## Initial candidate sample
-
-These candidates are a starting point for the audit. They are not approved sets.
-
-| Generation | Candidate | Primary role | Reason for inclusion | Review status |
-| ---: | --- | --- | --- | --- |
-| 1 | Starmie | Special attacker | Fast special attacker with offensive and utility options | Candidate |
-| 2 | Scizor | Physical attacker | Distinct physical role and strong ability-based set options | Candidate |
-| 3 | Breloom | Status/disruption | Clear status strategy and unusual Factory play patterns | Candidate |
-| 4 | Gliscor | Defensive | Durable defensive role with several possible set directions | Candidate |
-| 5 | Volcarona | Setup | Strong setup identity and a clear late-game role | Candidate |
-| 6 | Sylveon | Defensive | Specially oriented defensive and support options | Candidate |
-| 7 | Mimikyu | Setup | Distinct setup strategy and ability-driven identity | Candidate |
-| 8 | Dragapult | Mixed attacker | Flexible modern attacker with different offensive directions | Candidate |
-| 9 | Gholdengo | Utility | Modern ability and item interactions with a clear battlefield role | Candidate |
-
-The next review pass should find source templates for these candidates, check legality, identify unsupported gimmick dependencies, and assign provisional quality tiers.
-
-## First source-backed templates
-
-These are provisional templates for the first audit. They have been adapted to remove unsupported gimmicks where necessary. They are not yet approved for the Factory table.
-
-| Generation | Pokémon | Ability | Item | Moves | Nature | EVs | Role | Pool | Source | Status |
-| ---: | --- | --- | --- | --- | --- | --- | --- | ---: | --- | --- |
-| 1 | Starmie | Natural Cure | Colbur Berry | Scald / Recover / Teleport / Rapid Spin | Timid | 252 HP / 4 SpA / 252 Spe | Defensive | 0 | National Dex RU, 2026-07-24 | Candidate |
-| 2 | Scizor | Technician | Choice Band | Bullet Punch / U-turn / Close Combat / Knock Off | Adamant | 252 Atk / 4 SpD / 252 Spe | Physical attacker | 0 | UU, 2026-07-24 | Candidate |
-| 3 | Breloom | Technician | Black Belt | Bullet Seed / Close Combat / Mach Punch / Rock Tomb | Adamant | 252 Atk / 4 SpD / 252 Spe | Physical attacker | 0 | National Dex RU, 2026-07-24 | Adapted candidate |
-| 4 | Gliscor | Poison Heal | Toxic Orb | Spikes / Earthquake / Toxic / Protect | Careful | 244 HP / 36 Def / 228 SpD | Defensive | 0 | OU, 2026-07-24 | Candidate |
-| 5 | Volcarona | Flame Body | Heavy-Duty Boots | Quiver Dance / Flamethrower / Bug Buzz / Roost | Timid | 248 HP / 200 Def / 60 Spe | Setup | 0 | National Dex, 2026-07-24 | Adapted candidate |
-| 6 | Sylveon | Pixilate | Leftovers | Wish / Protect / Calm Mind / Hyper Voice | Bold | 252 HP / 212 Def / 44 Spe | Defensive | 0 | NU, 2026-07-24 | Candidate |
-| 7 | Mimikyu | Disguise | Lum Berry | Play Rough / Shadow Claw / Swords Dance / Shadow Sneak | Jolly | 252 Atk / 4 SpD / 252 Spe | Setup | 0 | OU, 2026-07-24 | Adapted candidate |
-| 8 | Dragapult | Infiltrator | Expert Belt | Dragon Darts / Hex / Will-O-Wisp / U-turn | Naive | 4 Atk / 252 SpA / 252 Spe | Mixed attacker | 0 | OU, 2026-07-24 | Adapted candidate |
-| 9 | Gholdengo | Good as Gold | Air Balloon | Shadow Ball / Make It Rain / Trick / Recover | Timid | 252 SpA / 4 SpD / 252 Spe | Utility | 0 | National Dex, 2026-07-24 | Candidate |
-
-The source sets include format-specific assumptions and, in some cases, optional Terastallization or other mechanics. The listed versions are the starting point for the Factory review, not direct imports. The Volcarona set replaces Hidden Power Ground with Roost because Hidden Power depends on IVs that the Factory controls separately. The Gliscor set resolves the source's slash options toward a single defensive build.
-
-## Filtered API results
-
-The first pull used the generation-wide Gen 9 data on 2026-07-24. Only the approved singles formats were included.
-
-| Pokémon | Available formats | Available source set names |
-| --- | --- | --- |
-| Starmie | National Dex RU | Defensive, Offensive |
-| Scizor | OU, UU, National Dex, National Dex UU | Choice Band, Offensive Swords Dance, Pivot, Swords Dance, Utility, Bulky Swords Dance |
-| Breloom | RU, National Dex RU | Poison Heal, Choice Band, Swords Dance |
-| Gliscor | OU, Ubers, National Dex | Defensive, Swords Dance, Utility |
-| Volcarona | Ubers, National Dex | Quiver Dance, Bulky Quiver Dance, Offensive Quiver Dance, Substitute + Swarm |
-| Sylveon | NU, National Dex RU | Choice Specs, Wish, Cleric |
-| Mimikyu | OU, UU, RU, National Dex | Swords Dance, Trick Room, Offensive Utility |
-| Dragapult | OU | Boots Pivot, Choice Specs, Mixed Offensive |
-| Gholdengo | OU, Ubers, National Dex | Bulky Nasty Plot, Choice Scarf, Offensive Nasty Plot, Thunder Wave + Hex, Nasty Plot |
-
-This confirms that the generation-wide file gives us useful variety without importing doubles, Little Cup, or non-standard formats. The next pass can select distinct roles from this list instead of inventing them manually.
-
-The sample still needs to be assigned across the existing Factory pools. It is not necessary for every pool to contain every generation, but each pool should contain enough variety to preserve the original progression.
 
 The current generated roster uses 920 source-backed entries for 381 species, with at most four distinct sets per species, split into eight progression pools. The existing progression rows select from these pools, with stronger ranges used by later rows. The generated roster covers the intended Gen 1–9 generation spread.
 
