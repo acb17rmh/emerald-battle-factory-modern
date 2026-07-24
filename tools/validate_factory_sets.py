@@ -119,9 +119,12 @@ def main():
             issues.append(f"duplicate set for {species}")
 
     constant_text = (CONSTANTS / "battle_frontier_mons.h").read_text()
+    constant_indexes = {entry["constant"]: index for index, entry in enumerate(roster)}
     for pool in range(8):
-        start = int(re.search(rf"POOL_{pool}_START FRONTIER_MON_GENERATED_(\d+)", constant_text).group(1))
-        end = int(re.search(rf"POOL_{pool}_END FRONTIER_MON_GENERATED_(\d+)", constant_text).group(1))
+        start_name = re.search(rf"POOL_{pool}_START (FRONTIER_MON_GENERATED_[A-Z0-9_]+)", constant_text).group(1)
+        end_name = re.search(rf"POOL_{pool}_END (FRONTIER_MON_GENERATED_[A-Z0-9_]+)", constant_text).group(1)
+        start = constant_indexes[start_name]
+        end = constant_indexes[end_name]
         pools[pool] = end - start + 1
 
     print(f"Entries: {len(roster)}")

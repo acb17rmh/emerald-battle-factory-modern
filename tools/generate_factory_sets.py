@@ -263,11 +263,11 @@ def candidates_for(species_name, species_map, move_names, item_names, nature_nam
     return sorted(unique.values(), key=lambda candidate: (candidate["score"], candidate["name"]))
 
 
-def render_set(index, candidate):
+def render_set(constant_name, candidate):
     evs = ", ".join(str(value) for value in candidate["evs"])
     moves = ", ".join(candidate["moves"])
     return (
-        f"    FRONTIER_MODERN_SET(FRONTIER_MON_GENERATED_{index:04d}, "
+        f"    FRONTIER_MODERN_SET({constant_name}, "
         f"{candidate['species']}, {candidate['ability']}, {candidate['item']}, "
         f"{candidate['nature']}, {evs}, {moves}),"
     )
@@ -295,17 +295,23 @@ def main():
         selected.extend(candidates[:4])
     selected = sorted(selected, key=lambda candidate: (candidate["score"], candidate["species"], candidate["name"]))
     pool_size = (len(selected) + 7) // 8
+    species_occurrences = {}
+    constant_names = []
+    for candidate in selected:
+        species = candidate["species"].removeprefix("SPECIES_")
+        species_occurrences[species] = species_occurrences.get(species, 0) + 1
+        constant_names.append(f"FRONTIER_MON_GENERATED_{species}_{species_occurrences[species]}")
 
     constants = MON_CONSTANTS.read_text()
     constants = re.sub(r"#define FRONTIER_MON_TEST_STARMIE.*?// GENERATED FACTORY CONSTANTS START\n", "// GENERATED FACTORY CONSTANTS START\n", constants, flags=re.S)
     constants = re.sub(r"// GENERATED FACTORY CONSTANTS START\n.*?// GENERATED FACTORY CONSTANTS END\n", "", constants, flags=re.S)
-    constant_lines = [f"#define FRONTIER_MON_GENERATED_{index:04d} {GENERATED_START + index}" for index in range(len(selected))]
+    constant_lines = [f"#define {name} {GENERATED_START + index}" for index, name in enumerate(constant_names)]
     markers = []
     for pool in range(8):
         start = min(pool * pool_size, len(selected) - 1)
         end = min((pool + 1) * pool_size - 1, len(selected) - 1)
-        markers.append(f"#define FRONTIER_MON_GENERATED_POOL_{pool}_START FRONTIER_MON_GENERATED_{start:04d}")
-        markers.append(f"#define FRONTIER_MON_GENERATED_POOL_{pool}_END FRONTIER_MON_GENERATED_{end:04d}")
+        markers.append(f"#define FRONTIER_MON_GENERATED_POOL_{pool}_START {constant_names[start]}")
+        markers.append(f"#define FRONTIER_MON_GENERATED_POOL_{pool}_END {constant_names[end]}")
     generated_constants = "// GENERATED FACTORY CONSTANTS START\n" + "\n".join(constant_lines + markers) + "\n// GENERATED FACTORY CONSTANTS END\n"
     constants = re.sub(r"#define NUM_FRONTIER_MONS\s+\d+", generated_constants + f"#define NUM_FRONTIER_MONS           {GENERATED_START + len(selected)}", constants)
     constants = re.sub(r"#define FRONTIER_MONS_HIGH_TIER\s+\d+", f"#define FRONTIER_MONS_HIGH_TIER     {GENERATED_START + len(selected) - 1}", constants)
@@ -314,13 +320,13 @@ def main():
     data = MON_DATA.read_text()
     data = re.sub(r"    \[FRONTIER_MON_TEST_STARMIE\].*?    // GENERATED FACTORY DATA START\n", "    // GENERATED FACTORY DATA START\n", data, flags=re.S)
     data = re.sub(r"    // GENERATED FACTORY DATA START\n.*?    // GENERATED FACTORY DATA END\n", "", data, flags=re.S)
-    generated = "\n".join(render_set(index, candidate) for index, candidate in enumerate(selected))
+    generated = "\n".join(render_set(name, candidate) for name, candidate in zip(constant_names, selected))
     generated_data = "    // GENERATED FACTORY DATA START\n" + generated + "\n    // GENERATED FACTORY DATA END\n"
     data = data.replace("};\n\n#undef FRONTIER_MODERN_SET", generated_data + "};\n\n#undef FRONTIER_MODERN_SET")
     MON_DATA.write_text(data)
     manifest = []
     for index, candidate in enumerate(selected):
-        manifest.append({"id": GENERATED_START + index, **candidate})
+        manifest.append({"id": GENERATED_START + index, "constant": constant_names[index], **candidate})
     MANIFEST.write_text(json.dumps(manifest, indent=2) + "\n")
 
     factory = ROOT / "src/battle_factory.c"
