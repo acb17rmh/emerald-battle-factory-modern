@@ -2,7 +2,7 @@ name: Docs
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   deploy:
@@ -24,6 +24,7 @@ jobs:
           echo `pwd`/mdbook >> $GITHUB_PATH
       - name: Build Book
         run: |
+          python3 tools/generate_factory_docs.py --check
           cd docs
           mdbook build
       - name: Check if Pages is enabled
