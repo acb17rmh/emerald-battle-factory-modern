@@ -28,6 +28,10 @@ The hosted documentation site is available at:
 
 <https://acb17rmh.github.io/emerald-battle-factory-modern/>
 
+The browser-based ROM patcher is available at:
+
+<https://acb17rmh.github.io/emerald-battle-factory-modern/patcher/>
+
 To run it locally with MdBook:
 
 ```bash
