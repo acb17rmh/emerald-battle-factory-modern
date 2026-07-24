@@ -28,6 +28,37 @@ The hosted documentation site is available at:
 
 <https://acb17rmh.github.io/emerald-battle-factory-modern/>
 
+The browser-based ROM patcher is available at:
+
+<https://acb17rmh.github.io/emerald-battle-factory-modern/patcher/>
+
+## Installation
+
+Emerald Battle Factory Modern is distributed as a BPS patch. You must provide
+your own legally obtained Pokémon Emerald ROM; the original ROM is never
+uploaded or distributed by this project.
+
+1. Open the [browser-based ROM patcher](https://acb17rmh.github.io/emerald-battle-factory-modern/patcher/).
+2. Select your clean Pokémon Emerald ROM.
+3. Confirm that the patcher accepts the ROM, then select **Apply patch**.
+4. Download the patched ROM and use it with a compatible emulator or hardware.
+
+The required clean ROM has these checksums:
+
+```text
+SHA-1:  f3ae088181bf583e55daf962a92bb46f4f1d07b7
+CRC32:  1F1C08FB
+```
+
+The `v0.1.0` patched ROM has this SHA-1 checksum:
+
+```text
+568cbe7534ec59bcaa9746e84249bbcaa75bed95
+```
+
+Patching runs locally in your browser, so your ROM file is not sent to the
+website.
+
 To run it locally with MdBook:
 
 ```bash

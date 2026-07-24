@@ -27,6 +27,15 @@ jobs:
           python3 tools/generate_factory_docs.py --check
           cd docs
           mdbook build
+      - name: Copy ROM patcher
+        run: |
+          mkdir -p docs/book/patcher
+          cp -r docs/patcher/. docs/book/patcher/
+      - name: Download latest ROM patch
+        run: |
+          curl --fail --location --retry 3 \
+            'https://github.com/acb17rmh/emerald-battle-factory-modern/releases/latest/download/emerald-battle-factory-modern.bps' \
+            --output docs/book/patcher/emerald-battle-factory-modern.bps
       - name: Check if Pages is enabled
         uses: octokit/request-action@v2.x
         id: check_pages

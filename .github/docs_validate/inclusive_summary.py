@@ -44,6 +44,9 @@ if not errorLines:
             pass
         elif path == Path("changelogs/template.md"):
             pass
+        elif path.parts and path.parts[0] in {"book", "patcher"}:
+            # Generated book output and the standalone patcher are not mdBook pages.
+            pass
         elif path in summaryContents:
             pass
         else:
