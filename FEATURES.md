@@ -1,17 +1,5 @@
 # Features
 
-## Battle Factory
-
-- The original seven-battle challenge structure
-- Rental Pokémon selection and opponent-team exchanges
-- Separate Level 50 and Open Level modes
-- The original streak, unlock, and progression systems
-- Eight generated Pokémon pools used by the existing progression rows
-- Rental and opponent restrictions that preserve the Factory's rules
-- Challenge-based IV quality and trainer selection
-- Factory AI that becomes more capable in later challenges
-- Noland presentation and Factory music
-
 ## Modern Pokémon sets
 
 - Pokémon from Generations 1–9
@@ -26,19 +14,7 @@
 
 ## Quality of life
 
-- Start directly outside the Battle Factory when creating a new game
 - Battle speed options
 - Faster overworld movement
 - Configurable text speed, including instant text
-- Faster battle animations and transitions where supported
-- Initialised Factory-related items and player state
-
-## Presentation
-
-- Restored Noland introduction and dialogue
-- Battle Factory music
-- Modern Pokémon graphics and battle content supplied by pokeemerald-expansion
-
-## Deliberately out of scope
-
-This project does not currently include a separate roguelike loop, custom boss framework, random-battle mode, custom unlock system, or progression system replacing the original Battle Factory rules.
+- Options for faster battle animations
