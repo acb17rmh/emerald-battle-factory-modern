@@ -2290,7 +2290,7 @@ static void NewGameBirchSpeech_WaitForThisIsPokemonText(struct TextPrinterTempla
 {
     // Wait for Birch's "This is a Pokémon" text to reach the pause
     // Then start the PokéBall release (if it hasn't been started already)
-    if (*(printer->currentChar - 2) == EXT_CTRL_CODE_PAUSE && !sStartedPokeBallTask)
+    if (!sStartedPokeBallTask)
     {
         sStartedPokeBallTask = TRUE;
         CreateTask(Task_NewGameBirchSpeechSub_InitPokeBall, 0);

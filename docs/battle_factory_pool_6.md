@@ -1,942 +1,1533 @@
-# Battle Factory Pool 6
+# Battle Factory Pool 7
 
-This pool appears in **Level 50: Challenge 6** and **Open Level: Challenge 4**.
+This pool appears in **Level 50: Challenge 7** and **Open Level: Challenge 5**.
+
+A challenge is a block of seven battles. Challenge 1 is the first seven battles, Challenge 2 is the next seven, and so on.
 
 The pool is selected by the Factory's existing challenge progression. It is not a separate difficulty setting, and sets do not move between pools during a run.
 
-This pool contains **115 sets**.
+This pool contains **116 sets**.
 
 [Back to the complete set catalogue](./battle_factory_sets.md)
 
 ### Alomomola
 
-**Physically Defensive**  
-Ability: Healer  
-Item: Rocky Helmet  
-Nature: Relaxed  
-Moves: Play Rough, Whirlpool, Wish, Protect  
-EVs: HP 252, Def 252, SpD 4  
+**Physically Defensive**
+```text
+Alomomola @ Rocky Helmet
+Ability: Regenerator
+EVs: 252 HP / 252 Def / 4 SpD
+Relaxed Nature
+- Play Rough
+- Whirlpool
+- Wish
+- Protect
+```
 
-**Wish Passer**  
-Ability: Healer  
-Item: Heavy Duty Boots  
-Nature: Bold  
-Moves: Wish, Protect, Flip Turn, Scald  
-EVs: HP 252, Def 252, SpD 4  
+**Wish Passer**
+```text
+Alomomola @ Heavy-Duty Boots
+Ability: Regenerator
+EVs: 252 HP / 252 Def / 4 SpD
+Bold Nature
+- Wish
+- Protect
+- Flip Turn
+- Scald
+```
 
 ### Annihilape
 
-**Bulk Up**  
-Ability: Vital Spirit  
-Item: Leftovers  
-Nature: Careful  
-Moves: Rage Fist, Drain Punch, Bulk Up, Taunt  
-EVs: HP 248, Atk 8, SpD 252  
+**Bulk Up**
+```text
+Annihilape @ Leftovers
+Ability: Vital Spirit
+EVs: 248 HP / 8 Atk / 252 SpD
+Careful Nature
+- Rage Fist
+- Drain Punch
+- Bulk Up
+- Taunt
+```
 
-**Bulk Up**  
-Ability: Vital Spirit  
-Item: Leftovers  
-Nature: Careful  
-Moves: Bulk Up, Taunt, Drain Punch, Rage Fist  
-EVs: HP 240, SpD 252, Spe 16  
+**Bulk Up**
+```text
+Annihilape @ Leftovers
+Ability: Vital Spirit
+EVs: 240 HP / 252 SpD / 16 Spe
+Careful Nature
+- Bulk Up
+- Taunt
+- Drain Punch
+- Rage Fist
+```
 
 ### Archaludon
 
-**Rain Sweeper**  
-Ability: Stamina  
-Item: Assault Vest  
-Nature: Modest  
-Moves: Electro Shot, Draco Meteor, Body Press, Flash Cannon  
-EVs: HP 248, Def 52, SpA 84, Spe 124  
+**Rain Sweeper**
+```text
+Archaludon @ Assault Vest
+Ability: Stamina
+EVs: 248 HP / 52 Def / 84 SpA / 124 Spe
+Modest Nature
+- Electro Shot
+- Draco Meteor
+- Body Press
+- Flash Cannon
+```
 
 ### Baxcalibur
 
-**Dragon Dance**  
-Ability: Thermal Exchange  
-Item: Heavy Duty Boots  
-Nature: Jolly  
-Moves: Glaive Rush, Icicle Crash, Earthquake, Dragon Dance  
-EVs: Atk 252, SpD 4, Spe 252  
+**Dragon Dance**
+```text
+Baxcalibur @ Heavy-Duty Boots
+Ability: Thermal Exchange
+EVs: 252 Atk / 4 SpD / 252 Spe
+Jolly Nature
+- Glaive Rush
+- Icicle Crash
+- Earthquake
+- Dragon Dance
+```
 
-**Dragon Dance**  
-Ability: Thermal Exchange  
-Item: Loaded Dice  
-Nature: Adamant  
-Moves: Icicle Spear, Glaive Rush, Earthquake, Dragon Dance  
-EVs: Atk 252, SpD 4, Spe 252  
+**Dragon Dance**
+```text
+Baxcalibur @ Loaded Dice
+Ability: Thermal Exchange
+EVs: 252 Atk / 4 SpD / 252 Spe
+Adamant Nature
+- Icicle Spear
+- Glaive Rush
+- Earthquake
+- Dragon Dance
+```
 
-**Loaded Dice**  
-Ability: Thermal Exchange  
-Item: Loaded Dice  
-Nature: Jolly  
-Moves: Swords Dance, Scale Shot, Icicle Spear, Earthquake  
-EVs: Atk 252, SpD 4, Spe 252  
+**Loaded Dice**
+```text
+Baxcalibur @ Loaded Dice
+Ability: Thermal Exchange
+EVs: 252 Atk / 4 SpD / 252 Spe
+Jolly Nature
+- Swords Dance
+- Scale Shot
+- Icicle Spear
+- Earthquake
+```
 
 ### Blissey
 
-**Calm Mind**  
-Ability: Natural Cure  
-Item: Heavy Duty Boots  
-Nature: Calm  
-Moves: Shadow Ball, Calm Mind, Seismic Toss, Soft Boiled  
-EVs: HP 252, Def 4, SpD 252  
+**Calm Mind**
+```text
+Blissey @ Heavy-Duty Boots
+Ability: Natural Cure
+EVs: 252 HP / 4 Def / 252 SpD
+Calm Nature
+- Shadow Ball
+- Calm Mind
+- Seismic Toss
+- Soft Boiled
+```
 
-### Calyrex Ice
+### Calyrex-Ice
 
-**Offensive Trick Room**  
-Ability: As One Ice Rider  
-Item: Heavy Duty Boots  
-Nature: Brave  
-Moves: Trick Room, Swords Dance, Glacial Lance, High Horsepower  
-EVs: HP 248, Atk 252, SpD 8  
+**Offensive Trick Room**
+```text
+Calyrex-Ice @ Heavy-Duty Boots
+Ability: As One Ice Rider
+EVs: 248 HP / 252 Atk / 8 SpD
+Brave Nature
+- Trick Room
+- Swords Dance
+- Glacial Lance
+- High Horsepower
+```
 
 ### Chansey
 
-**Special Wall**  
-Ability: Natural Cure  
-Item: Eviolite  
-Nature: Sassy  
-Moves: Aromatherapy, Soft Boiled, Confide, Seismic Toss  
-EVs: HP 8, Def 252, SpD 248  
+**Special Wall**
+```text
+Chansey @ Eviolite
+Ability: Natural Cure
+EVs: 8 HP / 252 Def / 248 SpD
+Sassy Nature
+- Aromatherapy
+- Soft Boiled
+- Confide
+- Seismic Toss
+```
 
-### Chien Pao
+### Chien-Pao
 
-**Choice Band**  
-Ability: Sword Of Ruin  
-Item: Choice Band  
-Nature: Jolly  
-Moves: Crunch, Ice Spinner, Ice Shard, Sucker Punch  
-EVs: HP 24, Atk 252, Def 16, Spe 216  
+**Choice Band**
+```text
+Chien-Pao @ Choice Band
+Ability: Sword Of Ruin
+EVs: 24 HP / 252 Atk / 16 Def / 216 Spe
+Jolly Nature
+- Crunch
+- Ice Spinner
+- Ice Shard
+- Sucker Punch
+```
 
-**Choice Band**  
-Ability: Sword Of Ruin  
-Item: Choice Band  
-Nature: Jolly  
-Moves: Icicle Crash, Crunch, Sucker Punch, Ice Shard  
-EVs: Atk 252, Def 4, Spe 252  
+**Choice Band**
+```text
+Chien-Pao @ Choice Band
+Ability: Sword Of Ruin
+EVs: 252 Atk / 4 Def / 252 Spe
+Jolly Nature
+- Icicle Crash
+- Crunch
+- Sucker Punch
+- Ice Shard
+```
 
-**Swords Dance**  
-Ability: Sword Of Ruin  
-Item: Life Orb  
-Nature: Jolly  
-Moves: Swords Dance, Icicle Crash, Crunch, Sucker Punch  
-EVs: Atk 252, Def 4, Spe 252  
+**Swords Dance**
+```text
+Chien-Pao @ Life Orb
+Ability: Sword Of Ruin
+EVs: 252 Atk / 4 Def / 252 Spe
+Jolly Nature
+- Swords Dance
+- Icicle Crash
+- Crunch
+- Sucker Punch
+```
 
-### Chi Yu
+### Chi-Yu
 
-**Choice Item**  
-Ability: Beads Of Ruin  
-Item: Choice Scarf  
-Nature: Timid  
-Moves: Overheat, Flamethrower, Dark Pulse, Will O Wisp  
-EVs: SpA 252, SpD 4, Spe 252  
+**Choice Item**
+```text
+Chi-Yu @ Choice Scarf
+Ability: Beads Of Ruin
+EVs: 252 SpA / 4 SpD / 252 Spe
+Timid Nature
+- Overheat
+- Flamethrower
+- Dark Pulse
+- Will-O-Wisp
+```
 
-**Choice Scarf**  
-Ability: Beads Of Ruin  
-Item: Choice Scarf  
-Nature: Modest  
-Moves: Flamethrower, Dark Pulse, Fire Blast, Psychic  
-EVs: SpA 252, SpD 4, Spe 252  
+**Choice Scarf**
+```text
+Chi-Yu @ Choice Scarf
+Ability: Beads Of Ruin
+EVs: 252 SpA / 4 SpD / 252 Spe
+Modest Nature
+- Flamethrower
+- Dark Pulse
+- Fire Blast
+- Psychic
+```
 
-**Feesh (Offensive Wallbreaker)**  
-Ability: Beads Of Ruin  
-Item: Choice Specs  
-Nature: Modest  
-Moves: Overheat, Flamethrower, Fire Blast, Dark Pulse  
-EVs: Def 4, SpA 252, Spe 252  
+**Feesh (Offensive Wallbreaker)**
+```text
+Chi-Yu @ Choice Specs
+Ability: Beads Of Ruin
+EVs: 4 Def / 252 SpA / 252 Spe
+Modest Nature
+- Overheat
+- Flamethrower
+- Fire Blast
+- Dark Pulse
+```
 
-**Nasty Plot**  
-Ability: Beads Of Ruin  
-Item: Heavy Duty Boots  
-Nature: Timid  
-Moves: Fire Blast, Dark Pulse, Flame Charge, Nasty Plot  
-EVs: SpA 252, SpD 4, Spe 252  
+**Nasty Plot**
+```text
+Chi-Yu @ Heavy-Duty Boots
+Ability: Beads Of Ruin
+EVs: 252 SpA / 4 SpD / 252 Spe
+Timid Nature
+- Fire Blast
+- Dark Pulse
+- Flame Charge
+- Nasty Plot
+```
 
 ### Clefable
 
-**Magic Guard**  
-Ability: Magic Guard  
-Item: Leftovers  
-Nature: Bold  
-Moves: Moonblast, Moonlight, Stealth Rock, Knock Off  
-EVs: HP 252, Def 252, SpD 4  
+**Magic Guard**
+```text
+Clefable @ Leftovers
+Ability: Magic Guard
+EVs: 252 HP / 252 Def / 4 SpD
+Bold Nature
+- Moonblast
+- Moonlight
+- Stealth Rock
+- Knock Off
+```
 
 ### Clodsire
 
-**Special Wall**  
-Ability: Unaware  
-Item: Heavy Duty Boots  
-Nature: Careful  
-Moves: Earthquake, Toxic, Spikes, Recover  
-EVs: HP 252, Atk 4, SpD 252  
+**Special Wall**
+```text
+Clodsire @ Heavy-Duty Boots
+Ability: Unaware
+EVs: 252 HP / 4 Atk / 252 SpD
+Careful Nature
+- Earthquake
+- Toxic
+- Spikes
+- Recover
+```
 
 ### Corviknight
 
-**Physically Defensive**  
-Ability: Pressure  
-Item: Leftovers  
-Nature: Impish  
-Moves: Body Press, U Turn, Roost, Defog  
-EVs: HP 248, Def 252, SpD 8  
+**Physically Defensive**
+```text
+Corviknight @ Leftovers
+Ability: Pressure
+EVs: 248 HP / 252 Def / 8 SpD
+Impish Nature
+- Body Press
+- U-turn
+- Roost
+- Defog
+```
 
-**Physically Defensive**  
-Ability: Pressure  
-Item: Leftovers  
-Nature: Impish  
-Moves: Body Press, U Turn, Defog, Roost  
-EVs: HP 252, Def 160, SpD 96  
+**Physically Defensive**
+```text
+Corviknight @ Leftovers
+Ability: Pressure
+EVs: 252 HP / 160 Def / 96 SpD
+Impish Nature
+- Body Press
+- U-turn
+- Defog
+- Roost
+```
 
-**Specially Defensive**  
-Ability: Pressure  
-Item: Leftovers  
-Nature: Careful  
-Moves: Iron Head, U Turn, Roost, Defog  
-EVs: HP 248, Def 8, SpD 252  
+**Specially Defensive**
+```text
+Corviknight @ Leftovers
+Ability: Pressure
+EVs: 248 HP / 8 Def / 252 SpD
+Careful Nature
+- Iron Head
+- U-turn
+- Roost
+- Defog
+```
 
 ### Cyclizar
 
-**Utility**  
-Ability: Shed Skin  
-Item: Heavy Duty Boots  
-Nature: Jolly  
-Moves: Shed Tail, Rapid Spin, Knock Off, Taunt  
-EVs: HP 248, Atk 8, Spe 252  
+**Utility**
+```text
+Cyclizar @ Heavy-Duty Boots
+Ability: Shed Skin
+EVs: 248 HP / 8 Atk / 252 Spe
+Jolly Nature
+- Shed Tail
+- Rapid Spin
+- Knock Off
+- Taunt
+```
 
-### Deoxys Attack
+### Deoxys-Attack
 
-**Lead**  
-Ability: Pressure  
-Item: Focus Sash  
-Nature: Timid  
-Moves: Shadow Ball, Spikes, Icy Wind, Psycho Boost  
-EVs: Def 4, SpA 252, Spe 252  
+**Lead**
+```text
+Deoxys-Attack @ Focus Sash
+Ability: Pressure
+EVs: 4 Def / 252 SpA / 252 Spe
+Timid Nature
+- Shadow Ball
+- Spikes
+- Icy Wind
+- Psycho Boost
+```
 
-**Lead**  
-Ability: Pressure  
-Item: Focus Sash  
-Nature: Timid  
-Moves: Psycho Boost, Shadow Ball, Icy Wind, Spikes  
-EVs: Def 4, SpA 252, Spe 252  
+**Lead**
+```text
+Deoxys-Attack @ Focus Sash
+Ability: Pressure
+EVs: 4 Def / 252 SpA / 252 Spe
+Timid Nature
+- Psycho Boost
+- Shadow Ball
+- Icy Wind
+- Spikes
+```
 
-**Meteor Beam**  
-Ability: Pressure  
-Item: Power Herb  
-Nature: Timid  
-Moves: Meteor Beam, Expanding Force, Focus Blast, Shadow Ball  
-EVs: Def 4, SpA 252, Spe 252  
+**Meteor Beam**
+```text
+Deoxys-Attack @ Power Herb
+Ability: Pressure
+EVs: 4 Def / 252 SpA / 252 Spe
+Timid Nature
+- Meteor Beam
+- Expanding Force
+- Focus Blast
+- Shadow Ball
+```
 
-**Mixed Attacker**  
-Ability: Pressure  
-Item: Life Orb  
-Nature: Naive  
-Moves: Psycho Boost, Shadow Ball, Low Kick, Rock Slide  
-EVs: Atk 4, SpA 252, Spe 252  
+**Mixed Attacker**
+```text
+Deoxys-Attack @ Life Orb
+Ability: Pressure
+EVs: 4 Atk / 252 SpA / 252 Spe
+Naive Nature
+- Psycho Boost
+- Shadow Ball
+- Low Kick
+- Rock Slide
+```
 
-### Deoxys Speed
+### Deoxys-Speed
 
-**Dual Screens**  
-Ability: Pressure  
-Item: Light Clay  
-Nature: Timid  
-Moves: Reflect, Light Screen, Magic Coat, Taunt  
-EVs: HP 248, Def 8, Spe 252  
+**Dual Screens**
+```text
+Deoxys-Speed @ Light Clay
+Ability: Pressure
+EVs: 248 HP / 8 Def / 252 Spe
+Timid Nature
+- Reflect
+- Light Screen
+- Magic Coat
+- Taunt
+```
 
 ### Dialga
 
-**Choice Specs**  
-Ability: Pressure  
-Item: Choice Specs  
-Nature: Modest  
-Moves: Trick, Draco Meteor, Fire Blast, Thunder  
-EVs: SpA 204, SpD 52, Spe 252  
+**Choice Specs**
+```text
+Dialga @ Choice Specs
+Ability: Pressure
+EVs: 204 SpA / 52 SpD / 252 Spe
+Modest Nature
+- Trick
+- Draco Meteor
+- Fire Blast
+- Thunder
+```
 
-**Choiced**  
-Ability: Pressure  
-Item: Choice Scarf  
-Nature: Timid  
-Moves: Draco Meteor, Fire Blast, Flash Cannon, Trick  
-EVs: SpA 252, SpD 4, Spe 252  
+**Choiced**
+```text
+Dialga @ Choice Scarf
+Ability: Pressure
+EVs: 252 SpA / 4 SpD / 252 Spe
+Timid Nature
+- Draco Meteor
+- Fire Blast
+- Flash Cannon
+- Trick
+```
 
-**Mixed Utility**  
-Ability: Pressure  
-Item: Leftovers  
-Nature: Sassy  
-Moves: Draco Meteor, Heavy Slam, Stealth Rock, Dragon Tail  
-EVs: HP 252, SpA 4, SpD 252  
+**Mixed Utility**
+```text
+Dialga @ Leftovers
+Ability: Pressure
+EVs: 252 HP / 4 SpA / 252 SpD
+Sassy Nature
+- Draco Meteor
+- Heavy Slam
+- Stealth Rock
+- Dragon Tail
+```
 
-**Specially Defensive**  
-Ability: Pressure  
-Item: Leftovers  
-Nature: Calm  
-Moves: Draco Meteor, Earth Power, Stealth Rock, Roar  
-EVs: HP 252, SpA 4, SpD 252  
+**Specially Defensive**
+```text
+Dialga @ Leftovers
+Ability: Pressure
+EVs: 252 HP / 4 SpA / 252 SpD
+Calm Nature
+- Draco Meteor
+- Earth Power
+- Stealth Rock
+- Roar
+```
 
-### Dialga Origin
+### Dialga-Origin
 
-**Stealth Rock Setter**  
-Ability: Pressure  
-Item: Adamant Crystal  
-Nature: Timid  
-Moves: Draco Meteor, Steel Beam, Stealth Rock, Dragon Tail  
-EVs: HP 252, SpA 4, Spe 252  
+**Stealth Rock Setter**
+```text
+Dialga-Origin @ Adamant Crystal
+Ability: Pressure
+EVs: 252 HP / 4 SpA / 252 Spe
+Timid Nature
+- Draco Meteor
+- Steel Beam
+- Stealth Rock
+- Dragon Tail
+```
 
 ### Diancie
 
-**Lead**  
-Ability: Clear Body  
-Item: Diancite  
-Nature: Hasty  
-Moves: Diamond Storm, Moonblast, Explosion, Spikes  
-EVs: HP 108, SpA 184, Spe 216  
+**Lead**
+```text
+Diancie @ Diancite
+Ability: Clear Body
+EVs: 108 HP / 184 SpA / 216 Spe
+Hasty Nature
+- Diamond Storm
+- Moonblast
+- Explosion
+- Spikes
+```
 
 ### Dondozo
 
-**Defensive**  
-Ability: Unaware  
-Item: Heavy Duty Boots  
-Nature: Impish  
-Moves: Liquidation, Rest, Curse, Sleep Talk  
-EVs: HP 252, Def 252, SpD 4  
+**Defensive**
+```text
+Dondozo @ Heavy-Duty Boots
+Ability: Unaware
+EVs: 252 HP / 252 Def / 4 SpD
+Impish Nature
+- Liquidation
+- Rest
+- Curse
+- Sleep Talk
+```
 
-**Physical Wall**  
-Ability: Unaware  
-Item: Leftovers  
-Nature: Impish  
-Moves: Avalanche, Curse, Rest, Body Press  
-EVs: HP 252, Def 252, SpD 4  
+**Physical Wall**
+```text
+Dondozo @ Leftovers
+Ability: Unaware
+EVs: 252 HP / 252 Def / 4 SpD
+Impish Nature
+- Avalanche
+- Curse
+- Rest
+- Body Press
+```
 
 ### Dragapult
 
-**Status Spam**  
-Ability: Infiltrator  
-Item: Heavy Duty Boots  
-Nature: Timid  
-Moves: Will O Wisp, Hex, Dragon Darts, Substitute  
-EVs: SpA 252, SpD 4, Spe 252  
+**Status Spam**
+```text
+Dragapult @ Heavy-Duty Boots
+Ability: Infiltrator
+EVs: 252 SpA / 4 SpD / 252 Spe
+Timid Nature
+- Will-O-Wisp
+- Hex
+- Dragon Darts
+- Substitute
+```
 
 ### Espathra
 
-**Calm Mind**  
-Ability: Opportunist  
-Item: Grassy Seed  
-Nature: Modest  
-Moves: Stored Power, Dazzling Gleam, Calm Mind, Protect  
-EVs: Def 244, SpA 252, Spe 12  
+**Calm Mind**
+```text
+Espathra @ Grassy Seed
+Ability: Opportunist
+EVs: 244 Def / 252 SpA / 12 Spe
+Modest Nature
+- Stored Power
+- Dazzling Gleam
+- Calm Mind
+- Protect
+```
 
-**Calm Mind**  
-Ability: Opportunist  
-Item: Electric Seed  
-Nature: Bold  
-Moves: Calm Mind, Stored Power, Dazzling Gleam, Roost  
-EVs: HP 152, Def 244, Spe 112  
+**Calm Mind**
+```text
+Espathra @ Electric Seed
+Ability: Opportunist
+EVs: 152 HP / 244 Def / 112 Spe
+Bold Nature
+- Calm Mind
+- Stored Power
+- Dazzling Gleam
+- Roost
+```
 
 ### Ferrothorn
 
-**Specially Defensive**  
-Ability: Iron Barbs  
-Item: Leftovers  
-Nature: Sassy  
-Moves: Power Whip, Spikes, Leech Seed, Knock Off  
-EVs: HP 248, Def 8, SpD 252  
+**Specially Defensive**
+```text
+Ferrothorn @ Leftovers
+Ability: Iron Barbs
+EVs: 248 HP / 8 Def / 252 SpD
+Sassy Nature
+- Power Whip
+- Spikes
+- Leech Seed
+- Knock Off
+```
 
 ### Flutter Mane
 
-**Choice Specs**  
-Ability: Protosynthesis  
-Item: Choice Specs  
-Nature: Timid  
-Moves: Shadow Ball, Moonblast, Psyshock, Power Gem  
-EVs: SpA 252, SpD 4, Spe 252  
+**Choice Specs**
+```text
+Flutter Mane @ Choice Specs
+Ability: Protosynthesis
+EVs: 252 SpA / 4 SpD / 252 Spe
+Timid Nature
+- Shadow Ball
+- Moonblast
+- Psyshock
+- Power Gem
+```
 
-**Life Orb**  
-Ability: Protosynthesis  
-Item: Life Orb  
-Nature: Timid  
-Moves: Shadow Ball, Moonblast, Power Gem, Calm Mind  
-EVs: SpA 252, SpD 4, Spe 252  
+**Life Orb**
+```text
+Flutter Mane @ Life Orb
+Ability: Protosynthesis
+EVs: 252 SpA / 4 SpD / 252 Spe
+Timid Nature
+- Shadow Ball
+- Moonblast
+- Power Gem
+- Calm Mind
+```
 
 ### Galvantula
 
-**Sticky Web**  
-Ability: Compound Eyes  
-Item: Focus Sash  
-Nature: Timid  
-Moves: Sticky Web, Energy Ball, Thunder, Thunder Wave  
-EVs: SpA 252, SpD 4, Spe 252  
+**Sticky Web**
+```text
+Galvantula @ Focus Sash
+Ability: Compound Eyes
+EVs: 252 SpA / 4 SpD / 252 Spe
+Timid Nature
+- Sticky Web
+- Energy Ball
+- Thunder
+- Thunder Wave
+```
 
 ### Garchomp
 
-**Suicide Lead**  
-Ability: Rough Skin  
-Item: Focus Sash  
-Nature: Jolly  
-Moves: Dragon Tail, Earthquake, Stealth Rock, Spikes  
-EVs: Atk 252, SpD 4, Spe 252  
+**Suicide Lead**
+```text
+Garchomp @ Focus Sash
+Ability: Rough Skin
+EVs: 252 Atk / 4 SpD / 252 Spe
+Jolly Nature
+- Dragon Tail
+- Earthquake
+- Stealth Rock
+- Spikes
+```
 
-**TankChomp**  
-Ability: Rough Skin  
-Item: Rocky Helmet  
-Nature: Jolly  
-Moves: Dragon Tail, Earthquake, Stealth Rock, Spikes  
-EVs: HP 252, Atk 4, Spe 252  
+**TankChomp**
+```text
+Garchomp @ Rocky Helmet
+Ability: Rough Skin
+EVs: 252 HP / 4 Atk / 252 Spe
+Jolly Nature
+- Dragon Tail
+- Earthquake
+- Stealth Rock
+- Spikes
+```
 
 ### Garganacl
 
-**IronPress**  
-Ability: Purifying Salt  
-Item: Leftovers  
-Nature: Impish  
-Moves: Salt Cure, Body Press, Iron Defense, Recover  
-EVs: HP 252, Def 216, SpD 40  
+**IronPress**
+```text
+Garganacl @ Leftovers
+Ability: Purifying Salt
+EVs: 252 HP / 216 Def / 40 SpD
+Impish Nature
+- Salt Cure
+- Body Press
+- Iron Defense
+- Recover
+```
 
-**Setup**  
-Ability: Purifying Salt  
-Item: Leftovers  
-Nature: Careful  
-Moves: Salt Cure, Iron Defense, Body Press, Recover  
-EVs: HP 248, Def 8, SpD 252  
+**Setup**
+```text
+Garganacl @ Leftovers
+Ability: Purifying Salt
+EVs: 248 HP / 8 Def / 252 SpD
+Careful Nature
+- Salt Cure
+- Iron Defense
+- Body Press
+- Recover
+```
 
-### Iron Valiant
+### Giratina-Origin
 
-**Mixed**  
-Ability: Quark Drive  
-Item: Booster Energy  
-Nature: Naive  
-Moves: Moonblast, Close Combat, Knock Off, Encore  
-EVs: Atk 4, SpA 252, Spe 252  
+**Physical Utility**
+```text
+Giratina-Origin @ Griseous Core
+Ability: Levitate
+EVs: 248 HP / 104 Atk / 112 Def / 44 Spe
+Adamant Nature
+- Poltergeist
+- Dragon Tail
+- Will-O-Wisp
+- Defog
+```
 
-**Swords Dance**  
-Ability: Quark Drive  
-Item: Booster Energy  
-Nature: Jolly  
-Moves: Swords Dance, Close Combat, Knock Off, Encore  
-EVs: Atk 252, Def 4, Spe 252  
+**Special Utility**
+```text
+Giratina-Origin @ Griseous Core
+Ability: Levitate
+EVs: 248 HP / 112 Def / 104 SpA / 44 Spe
+Modest Nature
+- Hex
+- Draco Meteor
+- Thunder Wave
+- Defog
+```
 
-### Kommo O
+### Gothitelle
 
-**Physical Clangorous Soul**  
-Ability: Bulletproof  
-Item: Leftovers  
-Nature: Jolly  
-Moves: Clangorous Soul, Drain Punch, Shadow Claw, Substitute  
-EVs: HP 248, Atk 8, Spe 252  
+**Choice Item**
+```text
+Gothitelle @ Choice Specs
+Ability: Frisk
+EVs: 32 HP / 4 Def / 252 SpA / 220 Spe
+Modest Nature
+- Trick
+- Rest
+- Psychic
+- Thunderbolt
+```
 
-**Special Clangorous Soul**  
-Ability: Bulletproof  
-Item: Leftovers  
-Nature: Timid  
-Moves: Clangorous Soul, Clanging Scales, Flamethrower, Substitute  
-EVs: SpA 252, SpD 4, Spe 252  
+**Choice Scarf**
+```text
+Gothitelle @ Choice Scarf
+Ability: Frisk
+EVs: 248 HP / 252 Def / 8 SpD
+Bold Nature
+- Trick
+- Calm Mind
+- Rest
+- Charm
+```
+
+**Delay Goth (Trapper)**
+```text
+Gothitelle @ Leftovers
+Ability: Frisk
+EVs: 252 HP / 232 Def / 24 Spe
+Bold Nature
+- Taunt
+- Calm Mind
+- Charm
+- Rest
+```
+
+### Gouging Fire
+
+**Scale**
+```text
+Gouging Fire @ Loaded Dice
+Ability: Protosynthesis
+EVs: 252 Atk / 4 SpD / 252 Spe
+Adamant Nature
+- Dragon Dance
+- Scale Shot
+- Flare Blitz
+- Morning Sun
+```
+
+**Standard**
+```text
+Gouging Fire @ Booster Energy
+Ability: Protosynthesis
+EVs: 252 Atk / 4 SpD / 252 Spe
+Adamant Nature
+- Dragon Dance
+- Outrage
+- Flare Blitz
+- Morning Sun
+```
 
 ### Kyurem
 
-**Choice Specs**  
-Ability: Pressure  
-Item: Choice Specs  
-Nature: Timid  
-Moves: Ice Beam, Freeze Dry, Earth Power, Draco Meteor  
-EVs: SpA 252, SpD 4, Spe 252  
+**Substitute + Protect**
+```text
+Kyurem @ Leftovers
+Ability: Pressure
+EVs: 52 HP / 204 SpA / 252 Spe
+Timid Nature
+- Substitute
+- Protect
+- Freeze Dry
+- Earth Power
+```
 
-**Mixed Dragon Dance**  
-Ability: Pressure  
-Item: Loaded Dice  
-Nature: Hasty  
-Moves: Dragon Dance, Icicle Spear, Freeze Dry, Earth Power  
-EVs: Atk 168, SpA 88, Spe 252  
+### Landorus-Therian
 
-**Substitute + Protect**  
-Ability: Pressure  
-Item: Leftovers  
-Nature: Timid  
-Moves: Substitute, Protect, Freeze Dry, Earth Power  
-EVs: HP 52, SpA 204, Spe 252  
+**Defensive**
+```text
+Landorus-Therian @ Rocky Helmet
+Ability: Intimidate
+EVs: 252 HP / 4 Def / 252 Spe
+Timid Nature
+- Stealth Rock
+- Earth Power
+- U-turn
+- Taunt
+```
 
-### Landorus Therian
-
-**Defensive**  
-Ability: Intimidate  
-Item: Rocky Helmet  
-Nature: Timid  
-Moves: Stealth Rock, Earth Power, U Turn, Taunt  
-EVs: HP 252, Def 4, Spe 252  
-
-**Offensive**  
-Ability: Intimidate  
-Item: Rocky Helmet  
-Nature: Jolly  
-Moves: Stealth Rock, Earthquake, Stone Edge, U Turn  
-EVs: Atk 252, Def 4, Spe 252  
+**Offensive**
+```text
+Landorus-Therian @ Rocky Helmet
+Ability: Intimidate
+EVs: 252 Atk / 4 Def / 252 Spe
+Jolly Nature
+- Stealth Rock
+- Earthquake
+- Stone Edge
+- U-turn
+```
 
 ### Latios
 
-**Choice Scarf**  
-Ability: Levitate  
-Item: Choice Scarf  
-Nature: Timid  
-Moves: Draco Meteor, Psychic Noise, Aura Sphere, Trick  
-EVs: SpA 252, SpD 4, Spe 252  
+**Choice Scarf**
+```text
+Latios @ Choice Scarf
+Ability: Levitate
+EVs: 252 SpA / 4 SpD / 252 Spe
+Timid Nature
+- Draco Meteor
+- Psychic Noise
+- Aura Sphere
+- Trick
+```
 
-### Lilligant Hisui
+### Lilligant-Hisui
 
-**Sun Sweeper**  
-Ability: Chlorophyll  
-Item: Life Orb  
-Nature: Adamant  
-Moves: Close Combat, Solar Blade, Triple Axel, Swords Dance  
-EVs: Atk 252, SpD 4, Spe 252  
+**Sun Sweeper**
+```text
+Lilligant-Hisui @ Life Orb
+Ability: Chlorophyll
+EVs: 252 Atk / 4 SpD / 252 Spe
+Adamant Nature
+- Close Combat
+- Solar Blade
+- Triple Axel
+- Swords Dance
+```
 
 ### Mamoswine
 
-**Offensive**  
-Ability: Oblivious  
-Item: Choice Band  
-Nature: Adamant  
-Moves: Icicle Crash, Earthquake, Ice Shard, Knock Off  
-EVs: Atk 252, Def 4, Spe 252  
+**Offensive**
+```text
+Mamoswine @ Choice Band
+Ability: Oblivious
+EVs: 252 Atk / 4 Def / 252 Spe
+Adamant Nature
+- Icicle Crash
+- Earthquake
+- Ice Shard
+- Knock Off
+```
 
 ### Manaphy
 
-**Tail Glow**  
-Ability: Hydration  
-Item: Leftovers  
-Nature: Timid  
-Moves: Tail Glow, Surf, Alluring Voice, Substitute  
-EVs: Def 4, SpA 252, Spe 252  
+**Tail Glow**
+```text
+Manaphy @ Leftovers
+Ability: Hydration
+EVs: 4 Def / 252 SpA / 252 Spe
+Timid Nature
+- Tail Glow
+- Surf
+- Alluring Voice
+- Substitute
+```
 
-**Take Heart**  
-Ability: Hydration  
-Item: Leftovers  
-Nature: Timid  
-Moves: Take Heart, Acid Armor, Scald, Stored Power  
-EVs: HP 252, Def 40, Spe 216  
+**Take Heart**
+```text
+Manaphy @ Leftovers
+Ability: Hydration
+EVs: 252 HP / 40 Def / 216 Spe
+Timid Nature
+- Take Heart
+- Acid Armor
+- Scald
+- Stored Power
+```
 
 ### Mandibuzz
 
-**Defensive**  
-Ability: Big Pecks  
-Item: Heavy Duty Boots  
-Nature: Bold  
-Moves: Foul Play, Roost, Defog, Toxic  
-EVs: HP 248, Def 244, Spe 16  
+**Defensive**
+```text
+Mandibuzz @ Heavy-Duty Boots
+Ability: Big Pecks
+EVs: 248 HP / 244 Def / 16 Spe
+Bold Nature
+- Foul Play
+- Roost
+- Defog
+- Toxic
+```
 
 ### Meowscarada
 
-**Boots Pivot**  
-Ability: Overgrow  
-Item: Heavy Duty Boots  
-Nature: Jolly  
-Moves: Knock Off, Flower Trick, Triple Axel, U Turn  
-EVs: Atk 252, SpD 4, Spe 252  
+**Boots Pivot**
+```text
+Meowscarada @ Heavy-Duty Boots
+Ability: Overgrow
+EVs: 252 Atk / 4 SpD / 252 Spe
+Jolly Nature
+- Knock Off
+- Flower Trick
+- Triple Axel
+- U-turn
+```
 
-**Choice Band**  
-Ability: Overgrow  
-Item: Choice Band  
-Nature: Jolly  
-Moves: Flower Trick, Knock Off, U Turn, Triple Axel  
-EVs: Atk 252, Def 4, Spe 252  
+**Choice Band**
+```text
+Meowscarada @ Choice Band
+Ability: Overgrow
+EVs: 252 Atk / 4 Def / 252 Spe
+Jolly Nature
+- Flower Trick
+- Knock Off
+- U-turn
+- Triple Axel
+```
 
-**Choice Scarf**  
-Ability: Overgrow  
-Item: Choice Scarf  
-Nature: Jolly  
-Moves: Knock Off, U Turn, Triple Axel, Flower Trick  
-EVs: Atk 252, Def 4, Spe 252  
+**Choice Scarf**
+```text
+Meowscarada @ Choice Scarf
+Ability: Overgrow
+EVs: 252 Atk / 4 Def / 252 Spe
+Jolly Nature
+- Knock Off
+- U-turn
+- Triple Axel
+- Flower Trick
+```
 
 ### Mimikyu
 
-**Swords Dance**  
-Ability: Disguise  
-Item: Life Orb  
-Nature: Jolly  
-Moves: Swords Dance, Play Rough, Shadow Claw, Shadow Sneak  
-EVs: Atk 252, SpD 4, Spe 252  
+**Swords Dance**
+```text
+Mimikyu @ Life Orb
+Ability: Disguise
+EVs: 252 Atk / 4 SpD / 252 Spe
+Jolly Nature
+- Swords Dance
+- Play Rough
+- Shadow Claw
+- Shadow Sneak
+```
 
-**Trick Room**  
-Ability: Disguise  
-Item: Red Card  
-Nature: Impish  
-Moves: Trick Room, Play Rough, Curse, Destiny Bond  
-EVs: HP 248, Atk 8, Def 252  
+**Trick Room**
+```text
+Mimikyu @ Red Card
+Ability: Disguise
+EVs: 248 HP / 8 Atk / 252 Def
+Impish Nature
+- Trick Room
+- Play Rough
+- Curse
+- Destiny Bond
+```
 
 ### Moltres
 
-**Defensive**  
-Ability: Pressure  
-Item: Heavy Duty Boots  
-Nature: Bold  
-Moves: Flamethrower, Roost, U Turn, Roar  
-EVs: HP 248, Def 248, Spe 12  
+**Defensive**
+```text
+Moltres @ Heavy-Duty Boots
+Ability: Pressure
+EVs: 248 HP / 248 Def / 12 Spe
+Bold Nature
+- Flamethrower
+- Roost
+- U-turn
+- Roar
+```
 
-### Ogerpon Cornerstone
+### Ogerpon-Cornerstone
 
-**Swords Dance**  
-Ability: Sturdy  
-Item: Cornerstone Mask  
-Nature: Jolly  
-Moves: Swords Dance, Ivy Cudgel, Power Whip, Low Kick  
-EVs: Atk 252, Def 4, Spe 252  
+**Swords Dance**
+```text
+Ogerpon-Cornerstone @ Cornerstone Mask
+Ability: Sturdy
+EVs: 252 Atk / 4 Def / 252 Spe
+Jolly Nature
+- Swords Dance
+- Ivy Cudgel
+- Power Whip
+- Low Kick
+```
 
-### Ogerpon Wellspring
+### Ogerpon-Wellspring
 
-**All-Out Attacker**  
-Ability: Water Absorb  
-Item: Wellspring Mask  
-Nature: Jolly  
-Moves: Ivy Cudgel, Knock Off, Play Rough, Trailblaze  
-EVs: Atk 252, Def 4, Spe 252  
+**All-Out Attacker**
+```text
+Ogerpon-Wellspring @ Wellspring Mask
+Ability: Water Absorb
+EVs: 252 Atk / 4 Def / 252 Spe
+Jolly Nature
+- Ivy Cudgel
+- Knock Off
+- Play Rough
+- Trailblaze
+```
 
-**Swords Dance**  
-Ability: Water Absorb  
-Item: Wellspring Mask  
-Nature: Jolly  
-Moves: Swords Dance, Ivy Cudgel, Trailblaze, Play Rough  
-EVs: Atk 252, SpD 4, Spe 252  
+**Swords Dance**
+```text
+Ogerpon-Wellspring @ Wellspring Mask
+Ability: Water Absorb
+EVs: 252 Atk / 4 SpD / 252 Spe
+Jolly Nature
+- Swords Dance
+- Ivy Cudgel
+- Trailblaze
+- Play Rough
+```
 
-**Utility**  
-Ability: Water Absorb  
-Item: Wellspring Mask  
-Nature: Jolly  
-Moves: Ivy Cudgel, U Turn, Knock Off, Spikes  
-EVs: Atk 252, SpD 4, Spe 252  
+**Utility**
+```text
+Ogerpon-Wellspring @ Wellspring Mask
+Ability: Water Absorb
+EVs: 252 Atk / 4 SpD / 252 Spe
+Jolly Nature
+- Ivy Cudgel
+- U-turn
+- Knock Off
+- Spikes
+```
 
 ### Okidogi
 
-**Assault Vest**  
-Ability: Toxic Chain  
-Item: Assault Vest  
-Nature: Adamant  
-Moves: Drain Punch, Gunk Shot, Knock Off, Ice Punch  
-EVs: HP 240, Atk 252, Spe 16  
+**Assault Vest**
+```text
+Okidogi @ Assault Vest
+Ability: Toxic Chain
+EVs: 240 HP / 252 Atk / 16 Spe
+Adamant Nature
+- Drain Punch
+- Gunk Shot
+- Knock Off
+- Ice Punch
+```
 
-**Bulk Up**  
-Ability: Toxic Chain  
-Item: Leftovers  
-Nature: Careful  
-Moves: Bulk Up, Drain Punch, Knock Off, Ice Punch  
-EVs: HP 252, SpD 160, Spe 96  
+**Bulk Up**
+```text
+Okidogi @ Leftovers
+Ability: Toxic Chain
+EVs: 252 HP / 160 SpD / 96 Spe
+Careful Nature
+- Bulk Up
+- Drain Punch
+- Knock Off
+- Ice Punch
+```
 
 ### Overqwil
 
-**Rain Sweeper**  
-Ability: Poison Point  
-Item: Life Orb  
-Nature: Jolly  
-Moves: Gunk Shot, Crunch, Liquidation, Swords Dance  
-EVs: Atk 252, Def 4, Spe 252  
+**Rain Sweeper**
+```text
+Overqwil @ Life Orb
+Ability: Poison Point
+EVs: 252 Atk / 4 Def / 252 Spe
+Jolly Nature
+- Gunk Shot
+- Crunch
+- Liquidation
+- Swords Dance
+```
 
 ### Primarina
 
-**Assault Vest**  
-Ability: Torrent  
-Item: Assault Vest  
-Nature: Modest  
-Moves: Moonblast, Psychic Noise, Surf, Flip Turn  
-EVs: HP 252, SpA 208, SpD 48  
+**Assault Vest**
+```text
+Primarina @ Assault Vest
+Ability: Torrent
+EVs: 252 HP / 208 SpA / 48 SpD
+Modest Nature
+- Moonblast
+- Psychic Noise
+- Surf
+- Flip Turn
+```
 
 ### Quagsire
 
-**Defensive**  
-Ability: Unaware  
-Item: Heavy Duty Boots  
-Nature: Bold  
-Moves: Stealth Rock, Recover, Toxic, Counter  
-EVs: HP 252, Def 252, SpD 4  
+**Defensive**
+```text
+Quagsire @ Heavy-Duty Boots
+Ability: Unaware
+EVs: 252 HP / 252 Def / 4 SpD
+Bold Nature
+- Stealth Rock
+- Recover
+- Toxic
+- Counter
+```
 
 ### Quaquaval
 
-**Assault Vest**  
-Ability: Torrent  
-Item: Assault Vest  
-Nature: Adamant  
-Moves: Close Combat, Aqua Step, Knock Off, Rapid Spin  
-EVs: Atk 252, Def 4, Spe 252  
+**Assault Vest**
+```text
+Quaquaval @ Assault Vest
+Ability: Torrent
+EVs: 252 Atk / 4 Def / 252 Spe
+Adamant Nature
+- Close Combat
+- Aqua Step
+- Knock Off
+- Rapid Spin
+```
 
-**Swords Dance**  
-Ability: Torrent  
-Item: Lum Berry  
-Nature: Jolly  
-Moves: Swords Dance, Aqua Step, Close Combat, Triple Axel  
-EVs: Atk 252, Def 4, Spe 252  
+**Swords Dance**
+```text
+Quaquaval @ Lum Berry
+Ability: Torrent
+EVs: 252 Atk / 4 Def / 252 Spe
+Jolly Nature
+- Swords Dance
+- Aqua Step
+- Close Combat
+- Triple Axel
+```
 
 ### Raging Bolt
 
-**All-Out Attacker**  
-Ability: Protosynthesis  
-Item: Life Orb  
-Nature: Modest  
-Moves: Thunderclap, Dragon Pulse, Weather Ball, Thunderbolt  
-EVs: Def 4, SpA 252, Spe 252  
+**All-Out Attacker**
+```text
+Raging Bolt @ Life Orb
+Ability: Protosynthesis
+EVs: 4 Def / 252 SpA / 252 Spe
+Modest Nature
+- Thunderclap
+- Dragon Pulse
+- Weather Ball
+- Thunderbolt
+```
 
-**Boots Pivot**  
-Ability: Protosynthesis  
-Item: Heavy Duty Boots  
-Nature: Modest  
-Moves: Thunderbolt, Thunderclap, Volt Switch, Dragon Pulse  
-EVs: Def 4, SpA 252, Spe 252  
+**Boots Pivot**
+```text
+Raging Bolt @ Heavy-Duty Boots
+Ability: Protosynthesis
+EVs: 4 Def / 252 SpA / 252 Spe
+Modest Nature
+- Thunderbolt
+- Thunderclap
+- Volt Switch
+- Dragon Pulse
+```
 
-**Calm Mind**  
-Ability: Protosynthesis  
-Item: Booster Energy  
-Nature: Modest  
-Moves: Calm Mind, Thunderclap, Dragon Pulse, Thunderbolt  
-EVs: Def 4, SpA 252, Spe 252  
+**Calm Mind**
+```text
+Raging Bolt @ Booster Energy
+Ability: Protosynthesis
+EVs: 4 Def / 252 SpA / 252 Spe
+Modest Nature
+- Calm Mind
+- Thunderclap
+- Dragon Pulse
+- Thunderbolt
+```
 
-**Choice Specs Pivot**  
-Ability: Protosynthesis  
-Item: Choice Specs  
-Nature: Modest  
-Moves: Thunderbolt, Draco Meteor, Thunderclap, Volt Switch  
-EVs: Def 4, SpA 252, Spe 252  
+**Choice Specs Pivot**
+```text
+Raging Bolt @ Choice Specs
+Ability: Protosynthesis
+EVs: 4 Def / 252 SpA / 252 Spe
+Modest Nature
+- Thunderbolt
+- Draco Meteor
+- Thunderclap
+- Volt Switch
+```
 
 ### Ribombee
 
-**Sticky Web**  
-Ability: Honey Gather  
-Item: Focus Sash  
-Nature: Timid  
-Moves: Sticky Web, Moonblast, Stun Spore, Skill Swap  
-EVs: SpA 252, SpD 4, Spe 252  
+**Sticky Web**
+```text
+Ribombee @ Focus Sash
+Ability: Honey Gather
+EVs: 252 SpA / 4 SpD / 252 Spe
+Timid Nature
+- Sticky Web
+- Moonblast
+- Stun Spore
+- Skill Swap
+```
 
 ### Rillaboom
 
-**Choice Band**  
-Ability: Overgrow  
-Item: Choice Band  
-Nature: Adamant  
-Moves: Grassy Glide, Wood Hammer, U Turn, Knock Off  
-EVs: Atk 252, Def 4, Spe 252  
+**Choice Band**
+```text
+Rillaboom @ Choice Band
+Ability: Overgrow
+EVs: 252 Atk / 4 Def / 252 Spe
+Adamant Nature
+- Grassy Glide
+- Wood Hammer
+- U-turn
+- Knock Off
+```
 
-**Swords Dance**  
-Ability: Overgrow  
-Item: Life Orb  
-Nature: Adamant  
-Moves: Swords Dance, Grassy Glide, Knock Off, Wood Hammer  
-EVs: Atk 252, Def 4, Spe 252  
+**Swords Dance**
+```text
+Rillaboom @ Life Orb
+Ability: Overgrow
+EVs: 252 Atk / 4 Def / 252 Spe
+Adamant Nature
+- Swords Dance
+- Grassy Glide
+- Knock Off
+- Wood Hammer
+```
 
-**Utility**  
-Ability: Overgrow  
-Item: Terrain Extender  
-Nature: Adamant  
-Moves: Grassy Glide, Knock Off, U Turn, Low Kick  
-EVs: HP 204, Atk 252, Spe 52  
+**Utility**
+```text
+Rillaboom @ Terrain Extender
+Ability: Overgrow
+EVs: 204 HP / 252 Atk / 52 Spe
+Adamant Nature
+- Grassy Glide
+- Knock Off
+- U-turn
+- Low Kick
+```
 
-### Samurott Hisui
+### Samurott-Hisui
 
-**Assault Vest**  
-Ability: Sharpness  
-Item: Assault Vest  
-Nature: Adamant  
-Moves: Ceaseless Edge, Razor Shell, Sucker Punch, Knock Off  
-EVs: HP 248, Atk 84, SpD 124, Spe 52  
+**Assault Vest**
+```text
+Samurott-Hisui @ Assault Vest
+Ability: Sharpness
+EVs: 248 HP / 84 Atk / 124 SpD / 52 Spe
+Adamant Nature
+- Ceaseless Edge
+- Razor Shell
+- Sucker Punch
+- Knock Off
+```
 
-**Boots Attacker**  
-Ability: Sharpness  
-Item: Heavy Duty Boots  
-Nature: Jolly  
-Moves: Ceaseless Edge, Razor Shell, Knock Off, Encore  
-EVs: Atk 252, SpD 4, Spe 252  
+**Boots Attacker**
+```text
+Samurott-Hisui @ Heavy-Duty Boots
+Ability: Sharpness
+EVs: 252 Atk / 4 SpD / 252 Spe
+Jolly Nature
+- Ceaseless Edge
+- Razor Shell
+- Knock Off
+- Encore
+```
 
-**Choice Scarf**  
-Ability: Sharpness  
-Item: Choice Scarf  
-Nature: Jolly  
-Moves: Ceaseless Edge, Razor Shell, Knock Off, Flip Turn  
-EVs: Atk 252, Def 4, Spe 252  
+**Choice Scarf**
+```text
+Samurott-Hisui @ Choice Scarf
+Ability: Sharpness
+EVs: 252 Atk / 4 Def / 252 Spe
+Jolly Nature
+- Ceaseless Edge
+- Razor Shell
+- Knock Off
+- Flip Turn
+```
 
-**Lead**  
-Ability: Sharpness  
-Item: Focus Sash  
-Nature: Jolly  
-Moves: Ceaseless Edge, Razor Shell, Aqua Jet, Knock Off  
-EVs: Atk 252, SpD 4, Spe 252  
+**Lead**
+```text
+Samurott-Hisui @ Focus Sash
+Ability: Sharpness
+EVs: 252 Atk / 4 SpD / 252 Spe
+Jolly Nature
+- Ceaseless Edge
+- Razor Shell
+- Aqua Jet
+- Knock Off
+```
 
 ### Serperior
 
-**Choice Scarf**  
-Ability: Contrary  
-Item: Choice Scarf  
-Nature: Modest  
-Moves: Leaf Storm, Knock Off, Giga Drain, Glare  
-EVs: SpA 252, SpD 4, Spe 252  
+**Choice Scarf**
+```text
+Serperior @ Choice Scarf
+Ability: Contrary
+EVs: 252 SpA / 4 SpD / 252 Spe
+Modest Nature
+- Leaf Storm
+- Knock Off
+- Giga Drain
+- Glare
+```
 
-### Slowking Galar
+### Slowking-Galar
 
-**Assault Vest**  
-Ability: Curious Medicine  
-Item: Assault Vest  
-Nature: Modest  
-Moves: Psyshock, Sludge Bomb, Flamethrower, Ice Beam  
-EVs: HP 252, Def 8, SpA 152, SpD 96  
+**Assault Vest**
+```text
+Slowking-Galar @ Assault Vest
+Ability: Curious Medicine
+EVs: 252 HP / 8 Def / 152 SpA / 96 SpD
+Modest Nature
+- Psyshock
+- Sludge Bomb
+- Flamethrower
+- Ice Beam
+```
 
-**Physically Defensive Pivot**  
-Ability: Regenerator  
-Item: Heavy Duty Boots  
-Nature: Relaxed  
-Moves: Chilly Reception, Sludge Bomb, Future Sight, Thunder Wave  
-EVs: HP 252, Def 252, SpD 4  
+**Physically Defensive Pivot**
+```text
+Slowking-Galar @ Heavy-Duty Boots
+Ability: Regenerator
+EVs: 252 HP / 252 Def / 4 SpD
+Relaxed Nature
+- Chilly Reception
+- Sludge Bomb
+- Future Sight
+- Thunder Wave
+```
 
-**Specially Defensive Pivot**  
-Ability: Regenerator  
-Item: Heavy Duty Boots  
-Nature: Sassy  
-Moves: Chilly Reception, Sludge Bomb, Future Sight, Thunder Wave  
-EVs: HP 252, Def 4, SpD 252  
+**Specially Defensive Pivot**
+```text
+Slowking-Galar @ Heavy-Duty Boots
+Ability: Regenerator
+EVs: 252 HP / 4 Def / 252 SpD
+Sassy Nature
+- Chilly Reception
+- Sludge Bomb
+- Future Sight
+- Thunder Wave
+```
 
 ### Talonflame
 
-**Defog**  
-Ability: Flame Body  
-Item: Heavy Duty Boots  
-Nature: Bold  
-Moves: Overheat, Defog, Will O Wisp, Roost  
-EVs: HP 248, Def 228, Spe 32  
+**Defog**
+```text
+Talonflame @ Heavy-Duty Boots
+Ability: Flame Body
+EVs: 248 HP / 228 Def / 32 Spe
+Bold Nature
+- Overheat
+- Defog
+- Will-O-Wisp
+- Roost
+```
 
-### Ting Lu
+### Ting-Lu
 
-**Defensive Utility**  
-Ability: Vessel Of Ruin  
-Item: Leftovers  
-Nature: Careful  
-Moves: Stealth Rock, Earthquake, Ruination, Whirlwind  
-EVs: HP 252, Def 4, SpD 252  
+**Defensive Utility**
+```text
+Ting-Lu @ Leftovers
+Ability: Vessel Of Ruin
+EVs: 252 HP / 4 Def / 252 SpD
+Careful Nature
+- Stealth Rock
+- Earthquake
+- Ruination
+- Whirlwind
+```
 
-**Resting-Lu (Rest)**  
-Ability: Vessel Of Ruin  
-Item: Leftovers  
-Nature: Careful  
-Moves: Rest, Earthquake, Ruination, Sleep Talk  
-EVs: HP 252, Def 4, SpD 252  
+**Resting-Lu (Rest)**
+```text
+Ting-Lu @ Leftovers
+Ability: Vessel Of Ruin
+EVs: 252 HP / 4 Def / 252 SpD
+Careful Nature
+- Rest
+- Earthquake
+- Ruination
+- Sleep Talk
+```
 
 ### Tinkaton
 
-**Utility**  
-Ability: Mold Breaker  
-Item: Air Balloon  
-Nature: Jolly  
-Moves: Stealth Rock, Gigaton Hammer, Encore, Thunder Wave  
-EVs: HP 252, SpD 24, Spe 232  
+**Utility**
+```text
+Tinkaton @ Air Balloon
+Ability: Mold Breaker
+EVs: 252 HP / 24 SpD / 232 Spe
+Jolly Nature
+- Stealth Rock
+- Gigaton Hammer
+- Encore
+- Thunder Wave
+```
 
-### Tornadus Therian
+### Tornadus-Therian
 
-**Assault Vest**  
-Ability: Regenerator  
-Item: Assault Vest  
-Nature: Timid  
-Moves: Bleakwind Storm, U Turn, Knock Off, Heat Wave  
-EVs: HP 252, SpD 4, Spe 252  
+**Assault Vest**
+```text
+Tornadus-Therian @ Assault Vest
+Ability: Regenerator
+EVs: 252 HP / 4 SpD / 252 Spe
+Timid Nature
+- Bleakwind Storm
+- U-turn
+- Knock Off
+- Heat Wave
+```
 
-**Boots Pivot**  
-Ability: Regenerator  
-Item: Heavy Duty Boots  
-Nature: Timid  
-Moves: Bleakwind Storm, U Turn, Knock Off, Heat Wave  
-EVs: HP 252, SpD 4, Spe 252  
+**Boots Pivot**
+```text
+Tornadus-Therian @ Heavy-Duty Boots
+Ability: Regenerator
+EVs: 252 HP / 4 SpD / 252 Spe
+Timid Nature
+- Bleakwind Storm
+- U-turn
+- Knock Off
+- Heat Wave
+```
 
-**Nasty Plot**  
-Ability: Regenerator  
-Item: Life Orb  
-Nature: Timid  
-Moves: Nasty Plot, Bleakwind Storm, Heat Wave, Grass Knot  
-EVs: SpA 252, SpD 4, Spe 252  
+**Nasty Plot**
+```text
+Tornadus-Therian @ Life Orb
+Ability: Regenerator
+EVs: 252 SpA / 4 SpD / 252 Spe
+Timid Nature
+- Nasty Plot
+- Bleakwind Storm
+- Heat Wave
+- Grass Knot
+```
 
 ### Toxapex
 
-**Assault Vest**  
-Ability: Regenerator  
-Item: Assault Vest  
-Nature: Modest  
-Moves: Sludge Bomb, Surf, Ice Beam, Infestation  
-EVs: HP 248, Def 8, SpA 252  
+**Assault Vest**
+```text
+Toxapex @ Assault Vest
+Ability: Regenerator
+EVs: 248 HP / 8 Def / 252 SpA
+Modest Nature
+- Sludge Bomb
+- Surf
+- Ice Beam
+- Infestation
+```
 
 ### Tyranitar
 
-**Choice Band**  
-Ability: Sand Stream  
-Item: Choice Band  
-Nature: Adamant  
-Moves: Knock Off, Stone Edge, Low Kick, Ice Punch  
-EVs: Atk 252, SpD 4, Spe 252  
+**Choice Band**
+```text
+Tyranitar @ Choice Band
+Ability: Sand Stream
+EVs: 252 Atk / 4 SpD / 252 Spe
+Adamant Nature
+- Knock Off
+- Stone Edge
+- Low Kick
+- Ice Punch
+```
 
 ### Umbreon
 
-**Defensive**  
-Ability: Synchronize  
-Item: Leftovers  
-Nature: Calm  
-Moves: Foul Play, Wish, Protect, Thunder Wave  
-EVs: HP 252, Def 4, SpD 252  
+**Defensive**
+```text
+Umbreon @ Leftovers
+Ability: Synchronize
+EVs: 252 HP / 4 Def / 252 SpD
+Calm Nature
+- Foul Play
+- Wish
+- Protect
+- Thunder Wave
+```
 
 ### Volcanion
 
-**Choice Specs**  
-Ability: Water Absorb  
-Item: Choice Specs  
-Nature: Modest  
-Moves: Steam Eruption, Flamethrower, Sludge Bomb, Earth Power  
-EVs: Def 4, SpA 252, Spe 252  
+**Choice Specs**
+```text
+Volcanion @ Choice Specs
+Ability: Water Absorb
+EVs: 4 Def / 252 SpA / 252 Spe
+Modest Nature
+- Steam Eruption
+- Flamethrower
+- Sludge Bomb
+- Earth Power
+```
 
 ### Walking Wake
 
-**Agility**  
-Ability: Protosynthesis  
-Item: Booster Energy  
-Nature: Modest  
-Moves: Agility, Surf, Dragon Pulse, Substitute  
-EVs: SpA 252, SpD 4, Spe 252  
+**Agility**
+```text
+Walking Wake @ Booster Energy
+Ability: Protosynthesis
+EVs: 252 SpA / 4 SpD / 252 Spe
+Modest Nature
+- Agility
+- Surf
+- Dragon Pulse
+- Substitute
+```
 
-**Boots Attacker**  
-Ability: Protosynthesis  
-Item: Heavy Duty Boots  
-Nature: Timid  
-Moves: Draco Meteor, Surf, Knock Off, Flip Turn  
-EVs: Def 4, SpA 252, Spe 252  
+**Boots Attacker**
+```text
+Walking Wake @ Heavy-Duty Boots
+Ability: Protosynthesis
+EVs: 4 Def / 252 SpA / 252 Spe
+Timid Nature
+- Draco Meteor
+- Surf
+- Knock Off
+- Flip Turn
+```
 
 ### Weavile
 
-**Boots Attacker**  
-Ability: Pressure  
-Item: Heavy Duty Boots  
-Nature: Jolly  
-Moves: Triple Axel, Knock Off, Ice Shard, Swords Dance  
-EVs: Atk 252, SpD 4, Spe 252  
+**Boots Attacker**
+```text
+Weavile @ Heavy-Duty Boots
+Ability: Pressure
+EVs: 252 Atk / 4 SpD / 252 Spe
+Jolly Nature
+- Triple Axel
+- Knock Off
+- Ice Shard
+- Swords Dance
+```
 
-**Choice Band**  
-Ability: Pressure  
-Item: Choice Band  
-Nature: Jolly  
-Moves: Triple Axel, Knock Off, Ice Shard, Low Kick  
-EVs: Atk 252, Def 4, Spe 252  
+**Choice Band**
+```text
+Weavile @ Choice Band
+Ability: Pressure
+EVs: 252 Atk / 4 Def / 252 Spe
+Jolly Nature
+- Triple Axel
+- Knock Off
+- Ice Shard
+- Low Kick
+```
 
-### Weezing Galar
+### Weezing-Galar
 
-**Utility**  
-Ability: Levitate  
-Item: Heavy Duty Boots  
-Nature: Bold  
-Moves: Defog, Will O Wisp, Pain Split, Sludge Bomb  
-EVs: HP 252, Def 252, SpD 4  
+**Utility**
+```text
+Weezing-Galar @ Heavy-Duty Boots
+Ability: Levitate
+EVs: 252 HP / 252 Def / 4 SpD
+Bold Nature
+- Defog
+- Will-O-Wisp
+- Pain Split
+- Sludge Bomb
+```
 
 ### Zapdos
 
-**Defensive**  
-Ability: Pressure  
-Item: Heavy Duty Boots  
-Nature: Bold  
-Moves: Hurricane, Volt Switch, Thunder Wave, Roost  
-EVs: HP 248, Def 252, SpA 8  
+**Defensive**
+```text
+Zapdos @ Heavy-Duty Boots
+Ability: Pressure
+EVs: 248 HP / 252 Def / 8 SpA
+Bold Nature
+- Hurricane
+- Volt Switch
+- Thunder Wave
+- Roost
+```
 
-**Offensive**  
-Ability: Pressure  
-Item: Heavy Duty Boots  
-Nature: Timid  
-Moves: Hurricane, Volt Switch, Heat Wave, Roost  
-EVs: Def 4, SpA 252, Spe 252  
+**Offensive**
+```text
+Zapdos @ Heavy-Duty Boots
+Ability: Pressure
+EVs: 4 Def / 252 SpA / 252 Spe
+Timid Nature
+- Hurricane
+- Volt Switch
+- Heat Wave
+- Roost
+```
 
 ### Zarude
 
-**Swords Dance**  
-Ability: Leaf Guard  
-Item: Leftovers  
-Nature: Jolly  
-Moves: Swords Dance, Knock Off, Power Whip, Synthesis  
-EVs: Atk 252, Def 4, Spe 252  
+**Swords Dance**
+```text
+Zarude @ Leftovers
+Ability: Leaf Guard
+EVs: 252 Atk / 4 Def / 252 Spe
+Jolly Nature
+- Swords Dance
+- Knock Off
+- Power Whip
+- Synthesis
+```

@@ -81,6 +81,9 @@ def main():
         legal_abilities[species].add("ABILITY_PRANKSTER")
     for species in UNAWARE_SPECIES:
         legal_abilities[species].add("ABILITY_UNAWARE")
+    for species in species_names:
+        if species.startswith("SPECIES_ARCEUS_"):
+            legal_abilities[species].add("ABILITY_MULTITYPE")
     per_species = defaultdict(list)
     exact_sets = defaultdict(set)
     formats = Counter()
