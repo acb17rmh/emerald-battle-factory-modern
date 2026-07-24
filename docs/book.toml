@@ -1,12 +1,12 @@
 [book]
 language = "en"
 src = "."
-title = "pokeemerald-expansion"
+title = "Emerald Battle Factory Modern"
 
 [output.html]
-git-repository-url = "https://github.com/rh-hideout/pokeemerald-expansion"
-edit-url-template = "https://github.com/rh-hideout/pokeemerald-expansion/edit/master/docs/{path}"
-site-url = "/pokeemerald-expansion/"
+git-repository-url = "https://github.com/acb17rmh/emerald-battle-factory-modern"
+edit-url-template = "https://github.com/acb17rmh/emerald-battle-factory-modern/edit/main/docs/{path}"
+site-url = "/emerald-battle-factory-modern/"
 
 [preprocessor.fix_links]
 command = "python3 fix_links.py"
